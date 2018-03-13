@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/MacPorts 2017_0) (preloaded format=pdflatex 2017.7.18)  13 MAR 2018 07:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/MacPorts 2017_0) (preloaded format=pdflatex 2017.7.18)  13 MAR 2018 07:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -202,22 +202,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (2.21849pt too wide) has occurred while \output is active
-\OT1/cmr/m/it/10 Preprint submitted to Nuclear Instruments and Methods in Physi
-cs Research March 13, 2018
- []
-
+) (./tritium.bbl)
 [1
 
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./tritium.aux) )
  
 Here is how much of TeX's memory you used:
- 2422 strings out of 494936
- 31583 string characters out of 6180785
- 85708 words of memory out of 5000000
- 5687 multiletter control sequences out of 15000+600000
+ 2429 strings out of 494936
+ 31670 string characters out of 6180785
+ 85688 words of memory out of 5000000
+ 5691 multiletter control sequences out of 15000+600000
  12322 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,4n,30p,237b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -228,7 +223,7 @@ Here is how much of TeX's memory you used:
 texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/local/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fo
 nts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on tritium.pdf (1 page, 75255 bytes).
+Output written on tritium.pdf (1 page, 81307 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream

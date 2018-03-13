@@ -53,7 +53,7 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Performance of the Hall A Tritium Target}
+\title{Preformance of the Hall A Tritium Target}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
@@ -96,7 +96,7 @@ Example reference to the Hall A NIM paper~\cite{Alcorn:2004sb}.
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
 \appendix
-\section{Acknowledgments}
+\section{Ackwoledgements}
 %% \label{}
 
 \bibliographystyle{elsarticle-num} 

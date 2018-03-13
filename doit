@@ -1,3 +1,4 @@
 pdflatex tritium.tex
+bibtex   tritium
 pdflatex tritium.tex
 pdflatex tritium.tex
