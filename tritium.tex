@@ -1,4 +1,7 @@
 
+%
+% NIM Paper Sync
+%
 \documentclass[preprint,12pt]{elsarticle}
 
 %% Use the option review to obtain double line spacing
@@ -14,11 +17,13 @@
 %% \documentclass[final,5p,times,twocolumn]{elsarticle}
 
 %% For including figures, graphicx.sty has been loaded in
-%% elsarticle.cls. If you prefer to use the old commands
+%% elsarticle.cls. If you prefer /to use the old commands
 \usepackage{epsfig}
+\usepackage{subcaption}
 
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
+\usepackage{xcolor}
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
 
@@ -53,12 +58,8 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Performance of the Hall A Tritium Target}
-
-%% use optional labels to link authors explicitly to addresses:
-%% \author[label1,label2]{}
-%% \address[label1]{}
-%% \address[label2]{}
+\title{Boiling Study for H, H2, H3 and He3 Targets}
+%\title{Performance of the Hall A Tritium Target}
 
 \author[Kent]{Sheren Alsalmi}
 \author[UNH]{Natalie Santiesteban}
@@ -70,19 +71,20 @@
 \address[JLab]{Jefferson Lab}
 
 \begin{abstract}
-Text of abstract goes here.
+When the beam passes through a cryo-target, the local temperature fluctuations could 
+cause a variation in the target density. This density variation is called \emph{Boiling}, 
+and it increases with increasing current. The density fluctuation due to passing beam, 
+or the boiling effect, for jlab Tritium experiments has been studied for Hydrogen (H), 
+Deuterium (H2), Tritium (H3) and Helium (He3) targets.\par
 \end{abstract}
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
 
 %% PACS codes here, in the form: \PACS code \sep code
-
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
-
 \end{keyword}
-
 \end{frontmatter}
 
 %% \linenumbers
@@ -90,6 +92,42 @@ Text of abstract goes here.
 %% main text
 \section{Introduction}
 \label{}
+%%%%%
+
+\section{Method Overview}
+One way to study the boiling effect is by using the \textbf{Yield Analysis}, where the charge normalized yield is calculated versus current. A decrease in the charged normalized yield at higher currents, indicates that the target's density is decreasing. In another words, the target is \emph{boiling}. \par
+\textbf{\underline{Steps for Yield Analysis:}}
+\begin{enumerate}
+\item{At each current, the total charge is calculated using:
+\begin{equation}\label{eq:charge}
+Q = a\times \Delta Counts + b\times \Delta Time
+\end{equation}
+wheren $Q$ is the total charge, $a$ and $b$ are the slop and offset identified by calibrating the Beam Charge Monitors "BCM's" frequency $vs.$ unser current . One can get the $Counts$ and $Time$ from the BCM and Clock scalers respectively. For this study, the dnew BCM is used, and the calibration constants are: $a=0.0003264$ and $b=0.1055$ (see Fig.\ref{fig:dnew})}
+\begin{figure}[htb]
+\centering
+ \includegraphics[width=0.7\linewidth]{dnew.png}
+  \caption{dnew Calibration by: Nathaly Santiesteban}
+  \label{fig:dnew}
+\end{figure}
+\item{The charge yield of a current $I$, $Yield(I)$, is then calculated using the following:
+\begin{equation}\label{eq:y}
+Yield(I) = \frac{N_{good}\times PS}{Q\times efficiencies \times LT}
+\end{equation}
+where $N_{good}$ is the number of good electrons at each current. Determining $N_{good}$,\emph{i.e.} selecting good electrons, is discussed in the following sections. PS and LT are the pre-scale and live-time of each run respectively. The $efficiencies$ include both detectors and trigger efficiencies.}
+\item{The charge normalized yield is calculated by normalizing the charge yield for a current $I$, eq.\ref{eq:y}, over the charge yield when there is no current.
+\begin{equation}
+Y_{norm}(I) = \frac{Yield(I)}{Yield(I=0)}
+\end{equation}
+Since we don't really know what the charge yield should be at zero current, we use the charge yield at the lowest current available (2.5 $\mu$A for this study) as a normalization factor. Then fit the results so that the normalized yield will be equal to 1 at $I=0$. 
+
+}
+\end{enumerate}
+\section{Electron Selection:}
+  In order to extract a good electron sample, several cuts were applied on the recorded data:
+ 
+
+
+Type your introduction here.
 
 Example reference to the Hall A NIM paper~\cite{Alcorn:2004sb}.
 
