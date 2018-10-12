@@ -315,9 +315,113 @@ an empty cell (Figure \ref{fig:bk_empty}). Each run was normalized over the tota
   \label{fig:bk_empty}
 \end{figure}
 
+Figure \ref{fig:bk_empty} shows the spectrum of the charge normalized yield for dummy cell and the tritium gas, for a beam current of $2.5$ $\mu A$. In this analysis, the density is study in a symmetric region of $16$ cm around the center of the target, therefore, the percentage of background events coming from the aluminum end-caps is given by the ratio between the charged normalized yield of the empty cell and the gas. Table \ref{tab:contamination} summarizes the contamination currents for the different currents used in the study.
  
+\begin{table}[h!]
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Current \\ $(\mu A)$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{3}H$\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{3}He$\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{2}H$\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{1}H$\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Current\\ $(\mu A)$\end{tabular}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Argon\\ (\%)\end{tabular}}} \\ \hline
+2.5                                                              & 1.7                                                             & 1.6                                                              & 0.7                                                             & 1.1                                                             & 2.5                                                             & 0.3                                                                                \\ \hline
+5                                                                & 1.7                                                             & 1.6                                                              & 0.7                                                             & 1.2                                                             & 4.5                                                             & 0.3                                                                                \\ \hline
+10                                                               & 1.7                                                             & 1.7                                                              & 0.8                                                             & 1.2                                                             & 8                                                               & 0.3                                                                                \\ \hline
+15                                                               & 1.8                                                             & 1.8                                                              & 0.8                                                             & 1.3                                                             & 12                                                              & 0.3                                                                                \\ \hline
+22.5                                                             & 1.8                                                             & 1.8                                                              & 0.8                                                             & 1.3                                                             & 15                                                              & 0.3                                                                                \\ \hline
+\multicolumn{5}{|l|}{}                                                                                                                                                                                                                                                                                                                    & 18                                                              & 0.3                                                                                \\ \hline
+\end{tabular}
+\label{tab:contamination}
+\caption{Aluminum end-caps contamination in the gas targets for the different currents.}
+
+\end{table}
+
  
 \section{Gas Target Results}
+
+The density change was measured by calculating the Yield for different currents. Specifically, the set of currents used for the analysis are summarized in Table \ref{tab:contamination}. In the absence of beam current, the density corresponds to the filling density value, therefore, it is assumed that at $0$ $\mu A$ the normalized Yield is $1$, consequently, the Yield points are extrapolated to this normalization value. 
+
+
+\begin{figure*}[h]
+\begin{center}
+  \begin{subfigure}{8cm}
+    \centering\includegraphics[width=8cm]{images/tritium_data.pdf}
+    \caption{$^{3}H$ Density Analysis. }
+    \label{fig:tritium_data}
+  \end{subfigure}
+  \begin{subfigure}{8cm}
+    \centering\includegraphics[width=8cm]{images/helium_data.pdf}
+    \caption{$^{3}He$ Density Analysis.}
+    \label{fig:helium_data}
+  \end{subfigure}
+  \begin{subfigure}{8cm}
+    \centering\includegraphics[width=8cm]{images/deuterium_data.pdf}
+    \caption{$^{2}H$ Density Analysis.}
+    \label{fig:deuterium_data}
+  \end{subfigure}
+  \begin{subfigure}{8cm}
+    \centering\includegraphics[width=8cm]{images/hydrogen_data.pdf}
+    \caption{$^{1}H$ Density Analysis.}
+    \label{fig:hydrogen_data}
+  \end{subfigure}
+  \end{center}
+  \label{fig:tritium_targets}
+\end{figure*}
+
+
+Figures \ref{fig:tritium_data}, \ref{fig:helium_data}, \ref{fig:deuterium_data},\ref{fig:hydrogen_data} and \ref{fig:argon_data} show the density  change for the different gas targets. As expected by the simulations, the density decreases with the intensity of the current and its behavior is calculated by a quadratic function: 
+
+\begin{equation}
+f = a\cdot I^{2} + b \cdot {I} + c
+\label{eq:boiling_factor}
+\end{equation}
+
+\noindent where $a$, $b$ and $c$ are the fit parameters, $I$ is the beam current and $f$ is equivalent to the factor that the density changed. Table \ref{tab:fit_parameters} shows the fit parameters for each target, which can be used to calculate the density change of the gas targets for any current in the range $0-22.5$ $\mu A$. 
+
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=\linewidth]{images/argon_data.pdf}
+  \caption{$^{40}Ar$ Density Analysis.}
+  \label{fig:argon_data}
+\end{figure}
+
+\begin{table}[]
+\begin{tabular}{|c|c|l|c|c|l|}
+\hline
+\multicolumn{3}{|c|}{\textbf{$^{3}H$ Fit Parameters}}                                & \multicolumn{3}{l|}{\textbf{$^{3}H$ Correlation Factors}}    \\ \hline
+\textbf{a}              & \multicolumn{2}{c|}{$1.06e-04 \pm 3.6e-05$}                & \textbf{C(a, b)}             & \multicolumn{2}{c|}{$-0.974$} \\ \hline
+\textbf{b}              & \multicolumn{2}{c|}{$-0.0068 \pm 8.9e-04$}                 & \textbf{C(b, c)}             & \multicolumn{2}{c|}{$-0.888$} \\ \hline
+\textbf{c}              & \multicolumn{2}{c|}{$1. +/- 0.003$}                        & \textbf{C(a, c)}             & \multicolumn{2}{c|}{$0.801$}  \\ \hline
+\multicolumn{3}{|c|}{\textbf{$^{3}He$ Fit Parameters}}                               & \multicolumn{3}{c|}{\textbf{$^{3}He$ Correlation Factors}}   \\ \hline
+\textbf{a}              & \multicolumn{2}{c|}{$1.036e-04\pm 2.5-05$}                 & \textbf{C(a, b)}                      & \multicolumn{2}{c|}{$-0.973$} \\ \hline
+\textbf{b}              & \multicolumn{2}{c|}{$-0.0051 \pm 6.4e-04$}                 & \textbf{C(b, c)}                      & \multicolumn{2}{c|}{$-0.879$} \\ \hline
+\textbf{c}              & \multicolumn{2}{c|}{$1 \pm 0.003$}                         & \textbf{C(a, c)}                     & \multicolumn{2}{c|}{$0.779$}  \\ \hline
+\multicolumn{3}{|c|}{\textbf{$^{2}H$ Fit Parameters}}                                & \multicolumn{3}{c|}{\textbf{$^{2}H$ Correlation Factors}}    \\ \hline
+\textbf{a}              & \multicolumn{2}{c|}{\$1.16e-04 \textbackslash{}pm 2.9e-05} & \textbf{C(a, b)}             & \multicolumn{2}{c|}{$-0.973$} \\ \hline
+\textbf{b}              & \multicolumn{2}{c|}{$-0.0067 \pm 7.1e-04$}                 & \textbf{C(b, c)}             & \multicolumn{2}{c|}{$-0.895$} \\ \hline
+\textbf{c}              & \multicolumn{2}{c|}{$1. \pm 0.003$}                        & \textbf{C(a, c)}             & \multicolumn{2}{c|}{$0.805$}  \\ \hline
+\multicolumn{3}{|c|}{\textbf{$^{1}H$ Fit Parameters}}                                & \multicolumn{3}{c|}{\textbf{$^{1}H$ Correlation Factors}}    \\ \hline
+\textbf{a}              & \multicolumn{2}{c|}{$1.70e-04 \pm 4.7e-05$}                & \textbf{C(a, b)}             & \multicolumn{2}{c|}{$-0.978$} \\ \hline
+\textbf{b}              & \multicolumn{2}{c|}{$-0.009 \pm 0.0012$}                   & \textbf{C(b, c)}             & \multicolumn{2}{c|}{$-0.881$} \\ \hline
+\textbf{c}              & \multicolumn{2}{c|}{$1. \pm 0.006$}                        & \textbf{C(a, c)}             & \multicolumn{2}{c|}{$0.788$}  \\ \hline
+\multicolumn{3}{|c|}{\textbf{$^{40}Ar$ Fit Parameters}}                              & \multicolumn{3}{c|}{\textbf{$^{40}Ar$ Correlation Factors}}  \\ \hline
+\textbf{a}              & \multicolumn{2}{c|}{$4.33 e-04 \pm 1.5e-04$}               & \textbf{C(a, b)}             & \multicolumn{2}{c|}{$-0.981$} \\ \hline
+\textbf{b}              & \multicolumn{2}{c|}{$-0.021 \pm 0.003$}                    & \textbf{C(b, c)}             & \multicolumn{2}{c|}{$-0.942$} \\ \hline
+\textbf{c}              & \multicolumn{2}{c|}{$1. \pm 0.02$}                         & \textbf{C(a, c)}             & \multicolumn{2}{c|}{$0.867$}  \\ \hline
+\end{tabular}
+\caption{Fit parameters for the density change calculation.}
+\label{tab:fit_parameters}
+\end{table}
+
+\subsection{Density Factor Ratios}
+
+The tritium family of experiments focus in the use of $^{3}H/^{3}He$ ratio, since they are mirror nuclei.  Also, some of them use also the ratio of the $^{3}H/^{2}H $ and  $^{3}He/^{2}H $ . Therefore, the ratio of the density factors is used to make the corrections in the cross sections for the analysis. Figure \ref{fig:density_ratios} shows the ratio between those nuclei. 
+
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=\linewidth]{images/density_factor_ratios.pdf}
+  \caption{Density Factor Ratios. }
+  \label{fig:density_ratios}
+\end{figure}
 
 
 \section{Acknowledgments}
