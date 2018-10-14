@@ -109,9 +109,21 @@ Density \sep target system
 \label{}
 %%%%%
 
+The tritium target was developed in Hall A at Jefferson Lab for the experiments E12-10103 \cite{marathon}, E12-11-112 \cite{E12-11-112}, E12-13-012 \cite{E12-13-012} and E12-14-009 \cite{E12-14-009}. This target system was first used by the experiment E12-14-012 \cite{E12-14-012} during the spring of 2017, and it was later used by the tritium family of experiments during the Fall of 2017 and the 2018 year. 
+
+The goal of the target system was to build a simple and robust structure to contain as minimum amount of tritium as possible, and to minimize its hazards. There were several requirements in order to achieve a safe tritium target system, and this paper summarizes the main characteristic of its design, development and results. 
+
+In addition to the hardware development, this paper also aims to present the density fluctuations of the four different gasses, $^{3}H$, $^{3}He$, $^{2}H$, $^{1}H$ and $^{40}Ar$, when the beam hits the targets. The current in the target increases the temperature, therefore the density of the gasses changed. The goal is to measure a functional form of the density change for any given current, which are used in the analysis of all the experiments in order to calculate the correct luminosity.
+
+The data taken for the density analysis was taken with the Left High Resolution Spectrometer (LHRS) at Hall A during February 2017 for the $^{40}Ar$ target and during December 2018 for the other targets. The beam energy for the study was $2.2$ $GeV$ in all cases, and the momentum and angle were $17.5 ^\circ $ and $1.79$ $GeV$ for $^{40}Ar$, and $17.0 ^\circ $ and $1.99$ $GeV$ for the other targets.
+
+Therefore, the target system is summarized, followed by some of the Hall A specifications. The main part of the paper describes the method to measure the density change in all the gas targets, and the quadratic functional form obtained for each target.
+
+
+
 \section{Target System}
 
-The tritium target was developed in Hall A at Jefferson Lab for the experiments E12-10103 \cite{marathon}, E12-11-112 \cite{E12-11-112}, E12-13-012 \cite{E12-13-012} and E12-14-009 \cite{E12-14-009}. The target ladder is shown in Figure \ref{ladder}, which allows a total of five cells, where one cells was a dummy target for background measurements. The main experiment will cycle between the $^{3}H$, $^{2}H$, $^{1}H $, $^{3}He$ target cells for most of the beam time. A modular design was used for the target ladder in order to install the tritium cell after all the other targets were placed. Particularly, the tritium cell was the only cell that was not filled in Jefferson Lab, it was filled in the Savannah River site tritium Enterprises (SRTE), and it was shipped in a Type A container that was located in Hall A at all time in Jefferson Lab, with only qualified personal access. The cell only was out of the container while it was inside the scattering chamber.
+The target ladder is shown in Figure \ref{ladder}, which allows a total of five cells, where one cells was a dummy target for background measurements. The main experiment will cycle between the $^{3}H$, $^{2}H$, $^{1}H $, $^{3}He$ target cells for most of the beam time. A modular design was used for the target ladder in order to install the tritium cell after all the other targets were placed. Particularly, the tritium cell was the only cell that was not filled in Jefferson Lab, it was filled in the Savannah River site tritium Enterprises (SRTE), and it was shipped in a Type A container that was located in Hall A at all time in Jefferson Lab, with only qualified personal access. The cell only was out of the container while it was inside the scattering chamber.
 
 \begin{figure}
 \centering
@@ -395,7 +407,7 @@ f = a\cdot I^{2} + b \cdot {I} + c
 \textbf{b}              & \multicolumn{2}{c|}{$-0.0051 \pm 6.4e-04$}                 & \textbf{C(b, c)}                      & \multicolumn{2}{c|}{$-0.879$} \\ \hline
 \textbf{c}              & \multicolumn{2}{c|}{$1 \pm 0.003$}                         & \textbf{C(a, c)}                     & \multicolumn{2}{c|}{$0.779$}  \\ \hline
 \multicolumn{3}{|c|}{\textbf{$^{2}H$ Fit Parameters}}                                & \multicolumn{3}{c|}{\textbf{$^{2}H$ Correlation Factors}}    \\ \hline
-\textbf{a}              & \multicolumn{2}{c|}{\$1.16e-04 \textbackslash{}pm 2.9e-05} & \textbf{C(a, b)}             & \multicolumn{2}{c|}{$-0.973$} \\ \hline
+\textbf{a}              & \multicolumn{2}{c|}{$1.16e-04 \pm 2.9e-05$} & \textbf{C(a, b)}             & \multicolumn{2}{c|}{$-0.973$} \\ \hline
 \textbf{b}              & \multicolumn{2}{c|}{$-0.0067 \pm 7.1e-04$}                 & \textbf{C(b, c)}             & \multicolumn{2}{c|}{$-0.895$} \\ \hline
 \textbf{c}              & \multicolumn{2}{c|}{$1. \pm 0.003$}                        & \textbf{C(a, c)}             & \multicolumn{2}{c|}{$0.805$}  \\ \hline
 \multicolumn{3}{|c|}{\textbf{$^{1}H$ Fit Parameters}}                                & \multicolumn{3}{c|}{\textbf{$^{1}H$ Correlation Factors}}    \\ \hline
@@ -423,9 +435,27 @@ The tritium family of experiments focus in the use of $^{3}H/^{3}He$ ratio, sinc
   \label{fig:density_ratios}
 \end{figure}
 
+\subsection{Systematic Uncertainties}
+
+There are several corrections to take into account in this analysis, and since the current is different for every point, the uncertainties are evaluated at every current point.  The systematic uncertainties are shown in Figures \ref{fig:tritium_data}, \ref{fig:helium_data}, \ref{fig:deuterium_data},\ref{fig:hydrogen_data} and \ref{fig:argon_data}, and they   include the uncertainty in the charge, current, live-time and detectors calculations.
+
+The BCM monitors cover a range of $0$ to $100$ $\mu A$. They use an absolute current measurement from a toroidal sensor (Unser) which is used to calibrate the RF cavities.  The Unser has a sensitivity of $4 mV/ \mu A$ \citep{denard}, but the offset drifts over time. The large background noise vetoes the possibility of employing the Unser during all the measurements, and implies that the precision of the measurements at low current have a slightly higher uncertainty. In other words, the charge uncertainty is current dependent. Therefore, the uncertainty of the current and charge is estimated using the BCM calibration showed in Figure \ref{fig:dnew_cal}, using the error covariance matrix, and it represents the highest source of systematic uncertainty in this measurement.
+
+
+The background contamination coming from the end-caps also contribute as a source of systematics uncertainty since the calculation implied some assumptions. Specifically, as shown in Figure \ref{fig:bk_empty}, the downstream end-cap thickness is slightly different for every target. Therefore, in order to calculate the background uncertainty in the measurement, the percentage of background was calculated in ranges of $3$ $cm$ starting from $8$ $cm$ out to $20$ $cm$ from the center of the target. Then, the percentage of density change was calculated for every point and the uncertainty in the background contamination is given by the standard deviation for the different measurements in each point. The standard deviation was never more than $1$ $\% $.
+
+Furthermore, $1$ $\% $ systematic errors were estimated for the lifetime, VDC One-Track efficiency, trigger efficiency, detection and cut efficiencies of Gas Cerenkov and Pion Rejetors.
+
+\subsection {Conclusions }
+
+Hall A at Jefferson Lab successfully ran the tritium set of experiments with an outstanding target system.  The maximum density change for each target is $9.7 \pm 0.5 \%$, $5.6 \pm 0.5\% $, $6.3 \pm 0.5\% $, $11.6\pm 0.5\% $ and $26.5 \pm 1 \%$ for $^{3}H$, $^{3}He$, $^{2}H$, $^{1}H$ and $^{3}H$, respectively. 
+
+
 
 \section{Acknowledgments}
 %% \label{}
+We would like to thank to the target group for its outstanding work, specially to the Design Authority and Project Manager Dave Meekins. Furthermore, none of this work will be possible without the wonderful group of graduate students and postdocs who were the building blocks of the experiments. Besides, all the hall A staff and experiment spoke people were a big help in every step of the way. And, certainly special thanks to Douglas Higginbotham for all his invaluable support . 
+
 
 \bibliographystyle{elsarticle-num} 
 \bibliography{references.bib}
