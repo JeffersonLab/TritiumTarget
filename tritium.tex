@@ -86,8 +86,11 @@ using $^{3}H$, $^{3}He$, $^{2}H$, $^{1}H$ and $^{40}Ar$ with nominal beam curren
 $22.5$ $\mu A$.  The target cells are machined from solid  aluminum blocks and have an active region of 25~cm long with a 1.3~cm diameter 
 with approximately 0.25~mm thick windows for the beam entrance and exit.   While the fill density of the cells is known, the density of the 
 gas when heated by the electron beam needs to be determined in order to extract experimental cross sections using these target cells.  
-As expected from simulations, we find the density of the target dependent on the current 
-of the electron beam going through the cell.   
+As expected from simulations, we find the density of the target dependent on the current of the electron beam going through the cell. Therefore, the expression to calculate the percentage of density changed for any current within the range of $2.5$ to $22.5$ $\mu A$ is obtained for each target.
+ 
+
+
+  
 \end{abstract}
 
 \begin{keyword}
@@ -245,7 +248,7 @@ $0.477 \pm 0.011$                                 \\ \hline
 
 \section{Experimental Hall A}
 
-Hall A has $53$ $m$ of diameter and $17$ $m$ of height under a layer of concrete. Specifically, this data was taken with the LHRS. The basic components of the LHRS are three superconductingquadrupoles (Q) and one superconducting dipole (D) in a QQDQ configuration. The quadrupoles align the electron while the dipole determines the momentum of the electrons that get to the detectors. After passing the magnets, the scattered electrons go through two Vertical Drift Chambers (VDCs), where the electrons ionize the gas inside the chambers, and with the information the position and angle of the trajectory are found. Then, the trigger scintillators s0 and s2, with the Cherenkov detector filled with CO2 between the trigger scintillator planes are found. They identify the electrons with $99 \%$  efficiency and has a threshold for pions of $4.8$ $GeV$ . Finally, the preshower and shower lead glasses blocks induce a cascade of pair production and bremsstrahlung radiation from energetic particles, which are used for the measurement of the energy of the electrons \cite{Alcorn:2004sb}.
+Hall A has $53$ $m$ of diameter and $17$ $m$ of height under a layer of concrete. Specifically, this data was taken with the LHRS. The basic components of the LHRS are three superconductingquadrupoles (Q) and one superconducting dipole (D) in a QQDQ configuration. The quadrupoles align the electron while the dipole determines the momentum of the electrons that get to the detectors. After passing the magnets, the scattered electrons go through two Vertical Drift Chambers (VDCs), where the electrons ionize the gas inside the chambers, and with the information the position and angle of the trajectory are found. Then, the trigger scintillators s0 and s2, with the Cherenkov detector filled with CO2 between the trigger scintillator planes are found. They identify the electrons with $99 \%$  efficiency and the threshold for pions is $4.8$ $GeV$ . Finally, the preshower and shower lead glasses blocks induce a cascade of pair production and bremsstrahlung radiation from energetic particles, which are used for the measurement of the energy of the electrons \cite{Alcorn:2004sb}.
 
 
 \section{Beam Current Monitor (BCM)}
@@ -253,7 +256,7 @@ Hall A has $53$ $m$ of diameter and $17$ $m$ of height under a layer of concrete
 
 The Beam Current Monitor (BCM) is the highest source of systematic uncertainty in the density study. The BCM system consists of a toroidal sensor (Unser), an RF cavity in the upstream side and an RF cavity in the downstream side of the Unser, and a data-acquisition system.  
 
-The Unser has a sensitivity of $4$ $mV/\mu A$ \cite{denard}, with an offset that drifts over time. The large offset noise vetoes the possibility of use the Unser during all the measurements. Therefore, the Unser is an absolute measurement of the current used to calibrate the cavities. These calibrations are required periodically.
+The Unser has a sensitivity of $4$ $mV/\mu A$ \cite{denard}, with an offset that drifts over time. The large offset noise vetoes the possibility of use the Unser during all the measurements. Therefore, the Unser is an absolute measurement of the current that is used to calibrate the cavities. These calibrations are required periodically.
 
 The Unser monitor is composed of two identical toroidal cores driven in opposite ways by an external source.  The DC component of the current flowing through the toroid sensor is detected by a magnetic modulator. The beam current in the cores produces a flux imbalance, which generates an output signal proportional to the even harmonics of the frequency of excitation, In the absence of DC current, the sum of the signals is zero \cite{denard}. The Unser is calibrated by sending a known DC current through the wire that passes inside of the toroids with a current source.  
 
@@ -261,23 +264,23 @@ The Unser monitor is composed of two identical toroidal cores driven in opposite
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\linewidth]{images/unser_calibration.pdf}
-    \caption{Wire Unser Calibration.}
+    \caption{Wire Unser Calibration. The band reprecents the $95$ $\%$ confidence level of the linear fit.}
     \label{fig:unser_cal}
 \end{figure}
   
 \begin{figure}[!h]
       \centering
     \includegraphics[width=\linewidth]{images/dnew_calibration.pdf}
-    \caption{BCM calibration.}
+    \caption{BCM calibration. The band reprecents the $95$ $\%$ confidence level of the linear fit.}
     \label{fig:dnew_cal}
 \end{figure}
 
-Two stainless steel resonant cavities surround the Unser and are tuned to the frequency of the beam $1.497$ $GHz$ with a quality coefficient $Q \approx 500$.    The cavities are composed ofa  loop antennas located where the magnetic field is maximum. When the beam passes through, the output RF signal is proportional to the current \cite{denard}. As consequence, the BCM response is linear with respect to the current. In the BCM calibration, the accelerator sent a set of currents, the absolute value of the current is measured with the Unser and its values are used to calculate the linear dependence of the BCM.
+Two stainless steel resonant cavities surround the Unser and are tuned to the frequency of the beam $1.497$ $GHz$ with a quality coefficient $Q \approx 500$.    The cavities are composed of loop antennas located where the magnetic field is maximum. When the beam passes through, the output RF signal is proportional to the current \cite{denard}. As consequence, the BCM response is linear with respect to the current. In the BCM calibration, the accelerator sent a set of currents, the absolute value of the current is measured with the Unser and its values are used to calculate the linear dependence of the BCM.
 
 
 Figure \ref{fig:unser_cal} shows the Unser calibration, the gain of the Unser is $0.0002497 \pm 9.648 \times 10^{-7} $ $\mu A/Hz$. Over time, the Unser gain has shown to be stable within $0.1$ $\%$ of $4$ $mV/\mu A$. 
 
-The beam current was calculated using the gain of the Unser, this current was used for the calculation of the parameters in the BCM linear response, as it is shown in Figure \ref{fig:dnew_cal}. In general, the beam current can be calculated using,
+The beam current was calculated using the gain of the Unser, this current was used for the calculation of the linear parameters of the BCM linear response, as it is shown in Figure \ref{fig:dnew_cal}. In general, the beam current can be calculated using,
 
 \begin{equation}
 I = g_{BCM}\cdot f+O
@@ -291,9 +294,9 @@ frequency $f$, the current $I$ is given by Equation \ref{eq:current_calc}.
 
 The density of the target is known when it is filled, but simulations have shown that the beam current will change the density of the target, and this effect is directly related with the luminosity, and therefore with any cross section measurement \cite{celldes}. It is expected that the density remains stable if the current applied to the gas is constant. The production currents for the experiments were $10$ $\mu A$ and $22.5$ $\mu A$, therefore, the goal is to calculate the density of the targets at those currents.  
 
-In order to measure the density change, the Yield is measured for different currents. After the Yield is calculated, it is normalized with respect to the lowest current Yield, and finally it is assumed when there is not current, the normalized Yield is $1$. The percentage changed in the Normalized Yield corresponds to the density percentage changed in the target. 
+In order to measure the density change, the charge Yield is measured for different currents. After the charge Yield is calculated, it is normalized with respect to the lowest current Yield, and finally it is assumed when there is not current, the charge normalized Yield is $1$. The percentage changed in the Normalized Yield corresponds to the percentage of density changed in the target. 
 
-The Yield is given by 
+The charge Yield is given by 
 
 \begin{equation}
 Y = \frac{PS \cdot N}{ Q \cdot \epsilon \cdot LT }
@@ -307,11 +310,11 @@ In order to extract a good electron sample, several cuts were applied to the dat
 
 \begin{itemize}
 \item[i.]Acceptance cuts include the momentum acceptance $dp$ and the angular resolution, the out-of-plane angle $\theta $ and the in-plane angle $\phi $. Specifically, the range used in the study 
-are $|dp| < 4.5 $ ,  $|\theta| < 3  $ and $|\phi| < 2.5 $.
+are $|dp| < 4.5$ $\%$ of the central value ,  $|\theta| < 3 $ $mrad  $ and $|\phi| < 2.5$ $mrad$.
 
 \item[ii.] The trigger selected required both scintillator planes and the Cherenkov detector (GC) to fire, in order to exclude pions events, and reduce the dead-time.
 
-\item[iii.]Using the other detectors, it was required only one track on the VDC, a GC signal bigger than the single photoelectron location. Furthermore,  $E/P>0.7$ was required, where $E$ and $P$ are the electrons energy and momentum, respectively. It was also probed through the course of this study that as long as the sample of electrons is chosen consistently, the results will remain invariant.
+\item[iii.]Using the other detectors, it was required only one track on the VDC, a GC signal bigger than the single photoelectron peak. Furthermore,  $E/P>0.7$ was required, where $E$ and $P$ are the electrons energy and momentum, respectively. It was also probed through the course of this study that as long as the sample of electrons is chosen consistently, the results will remain invariant within $1$ $\%$.
 
 \item[iv.] The gas events selected were in a range of $16$ $cm$ with respect to the center of the target.
 
@@ -353,15 +356,13 @@ The aim of the analysis is to measure the density change when the beam is on the
     \label{fig:solid}
 \end{figure}
 
-Figure \ref{fig:solid} show sthe Normalized Yield of the solid target. Thwe Yield was calculated using Equation \ref{eq:yield} for the the different beam currents and it was normalized with respect to the lowest current Yield value The plot shows that the Yield did not change within about $0.5 \%$. A zeroth order and a first order polynomial were used to fit the data, with a $\chi ^{2}$ of $1.93$ and $0.37$, respectively. As a result, for a solid target, the Yield is independent on the current since the density of the target remains constant.
+Figure \ref{fig:solid} show sthe Normalized Yield of the solid target. The charge Yield was calculated using Equation \ref{eq:yield} for the the different beam currents and it was normalized with respect to the lowest current Yield value The plot shows that the Yield did not change within about $0.5 \%$. A zeroth order and a first order polynomial were used to fit the data, with a $\chi ^{2}$ of $1.93$ and $0.37$, respectively. As a result, for a solid target, the charge Yield is independent on the current since the density of the target remains constant.
 
 \section{Background Contamination}
 
-The aluminum end-caps of the target cell contribute in the Yield calculation of the gas targets. Therefore, dummy cell measurements with aluminum foils of identical properties that the end-caps of the gas targets were taken, in order to remove the background events coming from the aluminum.
+The aluminum windows of the target cell contribute in the Yield calculation of the gas targets. Therefore, dummy cell measurements with aluminum foils of identical properties that the end-caps of the gas targets for the $^{40}Ar$ target, and with a dummy cell for the other targets were taken, in order to remove the background events coming from the aluminum.
 
-In order to check how end-cap background changes with increasing current, a
-comparison between the background at low and high current was estimated for
-an empty cell (Figure \ref{fig:bk_empty}). Each run was normalized over the total charge yield, and the ratio of the events at high current to low current was estimated. The ratio was found to be 1.006, which indicates that the end-cap background will not increase with increasing current and it is a constant number. Therefore, for the charge normalized yield this value will cancel out. However, when calculating the total charge yield, the background events need to be extracted from cryotarget events.
+In order to check how end-cap background changes with increasing current, a comparison between the background at low and high current was measured for the dummy targets. The charge yield given by Equation \ref{eq:current_calc} was calculated along the target length, and the ratio of the events at high current to low current was estimated. The ratio was found to be 1.006, which indicates that the windows background will not increase with increasing current, as is expected for a solid target. 
 
 \begin{figure}[h]
  \centering
@@ -383,14 +384,14 @@ Figure \ref{fig:bk_empty} shows the spectrum of the charge normalized yield for 
 22.5                                                             & 1.8                                                             & 1.8                                                              & 0.8                                                             & 1.3                                                             & 15                                                              & 0.3                                                                                \\ \hline
 \multicolumn{5}{|l|}{}                                                                                                                                                                                                                                                                                                                    & 18                                                              & 0.3                                                                                \\ \hline
 \end{tabular}
-\caption{Aluminum end-caps contamination in the gas targets for the different currents.}
+\caption{Aluminum windows contamination in a $16$ $cm$ range with respect to the center of the target, for the different currents.}
 \label{tab:contamination_al}
 \end{table}
 
  
 \section{Gas Target Results}
 
-The density change was measured by calculating the charge Yield for different currents. This yield is normalized with respect to the lowest current point. In the absence of beam current, the density corresponds to the filling density value, therefore, it is assumed that at $0$ $\mu A$ the normalized Yield is $1$, consequently, the Yield points are extrapolated to this normalization value. 
+The density change was measured by calculating the charge Yield for different currents. This yield is normalized with respect to the lowest current point. In the absence of beam current, the density corresponds to the filling density value, therefore, it is assumed that at $0$ $\mu A$ the normalized Yield is $1$, consequently, the points are extrapolated to this normalization value. 
 
 Figures  \ref{fig:argon_data}, \ref{fig:tritium_data}, \ref{fig:helium_data}, \ref{fig:deuterium_data} and \ref{fig:hydrogen_data},  show the density  change for the different gas targets. As expected by the simulations, the density decreases with the intensity of the current and its behavior is calculated by a quadratic function. 
 
@@ -474,7 +475,7 @@ f = a\cdot I^{2} + b \cdot {I} + c
 
 \subsection{Density Factor Ratios}
 
-The tritium family of experiments focus in the use of $^{3}H/^{3}He$ ratio, since they are mirror nuclei.  Also, some of of the experiments also used the ratio of the $^{3}H/^{2}H $ and/or  $^{3}He/^{2}H $ . Therefore, the ratio of the density factors is used to make the corrections in the cross sections for the analysis. Figure \ref{fig:density_ratios} shows the ratio between those nuclei. 
+The tritium family of experiments focus in the use of $^{3}H/^{3}He$ ratio, since they are mirror nuclei.  Also, some of of the experiments also used the ratio of the $^{3}H/^{2}H $ and/or  $^{3}He/^{2}H $ . Therefore, the ratio of the density factors is used to make the corrections in the cross sections for the analysis. Figure \ref{fig:density_ratios} shows the ratio between the factor of density change for those nuclei. 
 
 
 \begin{figure}[!h]
@@ -491,13 +492,13 @@ There are several corrections to take into account in this analysis, and since t
 The BCM monitors cover a range of $0$ to $100$ $\mu A$. They use an absolute current measurement from a toroidal sensor (Unser) which is used to calibrate the RF cavities.  The Unser has a sensitivity of $4 mV/ \mu A$ \citep{denard}, but the offset drifts over time. The large background noise implies that the precision of the measurements at low current have a slightly higher uncertainty. In other words, the charge uncertainty is current dependent. Therefore, the uncertainty of the current and charge is estimated using the BCM calibration showed in Figure \ref{fig:dnew_cal}, using the error covariance matrix, and it represents the highest source of systematic uncertainty in this measurement.
 
 
-The background contamination coming from the entrance and exit windows also contribute as a source of systematics uncertainty since the calculation implied some assumptions. Specifically, as shown in Figure \ref{fig:bk_empty}, the exit window hickness is slightly different for every target. Therefore, in order to calculate the background uncertainty in the measurement, the percentage of background was calculated in ranges of $3$ $cm$ starting from $8$ $cm$ out to $20$ $cm$ from the center of the target. Then, the percentage of density change was calculated for every point and the uncertainty in the background contamination is given by the standard deviation of the different measurements in each point. The standard deviation was never more than $1$ $\% $.
+The background contamination coming from the entrance and exit windows also contribute as a source of systematics uncertainty since the calculation implied some assumptions. Specifically, as shown in Figure \ref{fig:bk_empty}, the exit window thickness is slightly different for every target. Therefore, in order to calculate the background uncertainty in the measurement, the percentage of background was calculated in ranges of $3$ $cm$ starting from $8$ $cm$ out to $20$ $cm$ from the center of the target. Then, the percentage of density change was calculated for every point and the uncertainty in the background contamination is given by the standard deviation of the different measurements in each point. The standard deviation was never more than $1$ $\% $.
 
-Furthermore, $1$ $\% $ systematic errors were estimated for the lifetime, VDC One-Track efficiency, trigger efficiency, detection and cut efficiencies of Gas Cerenkov and Pion Rejetors.
+Furthermore, $1\% $ systematic errors were estimated for the live-time, VDC One-Track efficiency, trigger efficiency, detection and cut efficiencies of Gas Cerenkov and Pion Rejetors.
 
 \subsection {Conclusions }
 
-Hall A at Jefferson Lab successfully ran the tritium set of experiments with an outstanding target system.  The maximum density change for each target is $9.7 \pm 0.5 \%$, $5.6 \pm 0.5\% $, $6.3 \pm 0.5\% $, $11.6\pm 0.5\% $ and $26.5 \pm 1 \%$ for $^{3}H$, $^{3}He$, $^{2}H$, $^{1}H$ and $^{3}H$, respectively. 
+Hall A at Jefferson Lab successfully ran the tritium set of experiments with an outstanding target system.  The maximum density change for each target is $9.7 \pm 0.5 \%$, $5.6 \pm 0.5\% $, $6.3 \pm 0.5\% $, $11.6\pm 0.5\% $ and $26.5 \pm 1 \%$ for $^{3}H$, $^{3}He$, $^{2}H$, $^{1}H$ and $^{3}H$, respectively at $22.5$ $\mu A$. 
 
 
 
