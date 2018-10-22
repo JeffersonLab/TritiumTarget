@@ -5,3 +5,5 @@
 *.aux
 *.spl
 *.bak
+*.swp
+.DS_store
