@@ -75,11 +75,12 @@
 \author[Kent]{S. Alsalmi}
 \author[TN]{J. Bane}
 \author[FI]{J. Castellanos}
- \author[MIT]{R. Cruz-Torres}
+\author[MIT]{R. Cruz-Torres}
 \author[VT]{H. Dai}
 \author[Kent]{T. Hague}
 \author[OD]{F. Hauenstein}
-\author[OD]{D. W. Higinbotham}
+\author[JLab]{D. W. Higinbotham}
+\author[argonne]{R. J. Holt}
 \author[SB]{T.Kutz}
 \author[UNH]{S. Li}
 \author[COL]{H. Liu}
@@ -89,31 +90,28 @@
 \author[UVa]{ D. Nguyen}
 \author[hampton]{B. Pandey}
 \author[Kent]{Tong Su}
-\author[argonne]{ Z. Ye}
+\author[argonne]{Z. Ye}
 
 
 \address[Kent]{Kent State University, Kent, OH 44240}
 \address[TN]{The University of Tennessee, Knoxville, Tennessee 37996, USA}
-\address[FI]{Florida International University, Miami, FL
-33199}
+\address[FI]{Florida International University, Miami, FL 33199 USA}
 \address[MIT]{Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA}
-\address[UNH]{University of New Hampshire, Durham, NH 03824}
+\address[UNH]{University of New Hampshire, Durham, NH 03824 USA}
 \address[VT]{Virginia Tech, Blacksburg, Virginia 24061}
 \address[OD]{Old Dominion University, Norfolk, Virginia 23529, USA}
 \address[COL]{Columbia University, New York, New York 10027, USA}
-\address[JLab]{Jefferson Lab, Newport News, VA 23601}
+\address[JLab]{Jefferson Lab, Newport News, VA 23601 USA}
 \address[SB]{Stony Brook University, Stony Brook, New York 11794, USA}
 \address[UVA]{Department of Physics, University of Virginia, Charlottesville, Virginia 22904, USA}
 \address[hampton]{Hampton University, Hampton, Virginia 23669, USA}
 \address[argonne]{Physics Division, Argonne National Laboratory, Argonne, Illinois 60439, USA}
+\address[CalTech]{The Division of Physics Mathematics and Astronomy, California Institute of Technology, Pasadena California 91125 USA}
 
 
 \begin{abstract}
-The Jefferson Lab target group has developed closed gas target cells for use in electron scattering experiments. This system was initially developed for the safe use of tritium gas, but can be used with a wide variety of gases.  Thus far the system has been used in the 12 GeV 
-era of experiments of the Continuous Electron Beam Accelerator Facility (CEBAF) using $^{3}$H, $^{3}$He, $^{2}$H, $^{1}$H and $^{40}$Ar with nominal beam currents of  $22.5$ $\mu A$.  The target cells are machined from solid  aluminum blocks, they have an active region of $25$ $cm$ long with a $1.3$ $cm$ diameter with approximately $0.25$ $mm$ thick windows for the beam entrance and exit.   While the fill density of the cells is known, the density of the gas when heated by the electron beam needs to be determined in order to extract experimental cross sections using these target cells. We find the density of the target dependent on the current of the electron beam going through the cell. In this study, the expression to calculate the percentage of density changed for any current within the range of $2.5$ to $22.5$ $\mu A$ is obtained for each target.
+A system of modular sealed gas target cells has been developed for use in electron scattering experiments at The Thomas Jefferson National Accelerator Facility (Jefferson Lab). This system was initially developed to complete the $Marathon$ experiment which required, among other species, tritium as a target material. The system has been used in several 12 GeV era of experiments in Experimental Hall A using the Jefferson Lab Continuous Electron Beam Accelerator Facility (CEBAF). Thus far, the cells have been loaded with the gas species $^{3}$H, $^{3}$He, $^{2}$H, $^{1}$H and $^{40}$Ar and operated in nominal beam currents of up to $22.5$ $\mu A$.  Each cell is $25$ $cm$ long with a diameter of $1.3$ $cm$. While gas density of the cells at the time of loading is known, the density of the each gas varies uniquely when heated by the electron beam. To extract experimental cross sections using these cells the beam current dependent density of each target fluid must be determined. In this study, data from measurements with several beam currents within the range of $2.5$ to $22.5$ $\mu A$ on each target fluid are presented. Additionally, expressions for the beam dependent fluid density of each target are developed.
  
-
-
   
 \end{abstract}
 
@@ -135,106 +133,108 @@ Density \sep target system
 \label{}
 %%%%%
 
-The tritium target was developed in Hall A at Jefferson Lab for the experiments E12-10-103 (MARATHON) \cite{marathon}, E12-11-112 ($x_{b}>1$) \cite{E12-11-112}, E12-14-011 ($e'p$) \cite{E12-14-011}, E12-17-003 (Hypernuclear) \cite{hypernuclear} and E12-14-009 (elastic) \cite{E12-14-009}. This target system was first used by the experiment E12-14-012 (Argon) \cite{E12-14-012} during spring of 2017, and it was later used by the tritium set of experiments during  Fall 2017 and  2018 year. 
+A modular gas cell target system was developed for use in Hall A at Jefferson Lab for the MARATHON experiment (E12-10-103)\cite{marathon}. The design was specifically developed to safely contain and operate with gaseous tritium. The modular design allows additional gas cells filled with other species of gas to be installed in the system concurrently. The target was also adapted for the additional experiments E12-11-112 ($x_{b}>1$) \cite{E12-11-112}, E12-14-011 ($e'p$) \cite{E12-14-011}, E12-17-003 (Hypernuclear) \cite{hypernuclear} and E12-14-009 (elastic) \cite{E12-14-009}.  MARATHON, together with these experiments, became known as the tritium group experiments which were performed from December 2017 through November 2018. However, prior to tritium operations, a target cell was loaded with argon gas and used by the experiment E12-14-012 (Argon) \cite{E12-14-012} during Spring of 2017. 
 
-The goal of the target system was to build a simple and robust structure to contain the optimal amount of tritium, and to minimize 
-its hazards. There were several requirements in order to achieve a safe tritium target system, and this paper summarizes the main characteristic 
-of its design, development and results. 
 
-In addition to the hardware development, this paper also aims to present the density fluctuations of the four different gasses used 
-with the target system, $^{3}$H, $^{3}$He, $^{2}$H, $^{1}$H and $^{40}$Ar when the beam hits the targets. The current in the target 
-increases the temperature, therefore the density of the gasses are changed. The goal is to determine a functional form of the density 
-change for any given current, which will be in the analysis of all the experiments in order to calculate the correct luminosity.
-
-The data for the density analysis was taken with the Left High Resolution Spectrometer (LHRS) at Hall A during February 2017 
-for the $^{40}$Ar target and during December 2017 for the other targets. The beam energy for the study was $2.2$ GeV in all 
-cases, and the momentum and angle were $17.5 ^\circ $ and $1.79$ GeV for $^{40}$Ar, and $17.0 ^\circ $ and $1.99$ GeV for 
-the other targets.
-
-The target system is summarized, followed by the description of the process to calculate the density change, including 
-some revelant hardware and calibration devices in the analysis, as well as the systematics . Finally, a quadratic functional form 
-to calculate the percentage of density changed with respect to the current is  obtained for each target.
+While the performance of the target was an important consideration, the primary objective of the target system design and construction was to ensure safe operations with tritium gas under all conditions including reasonable upset conditions. These conditions included target cell preparations, loading, storage, transportation, installation, removal, and beam operations. This was accomplished with a modular design, rigorous fabrication and testing, proper quality assurance (QA) and quality control (QC) and multiple layers of containment/confinement. 
+ 
+In addition to a brief description of the target, we present the beam current dependent density of the five gases used 
+with the target system, $^{3}$H, $^{3}$He, $^{2}$H, $^{1}$H and $^{40}$Ar. The electrons in the beam pass through the target fluid and cell entrance and exit end caps depositing ionization energy. This ionization energy, which is proportional to the beam current, induces heat in the target fluid causing local changes in the density. To determine the magnitude of this effect, data were collected with the Left High Resolution Spectrometer (LHRS) in Jefferson Lab Experimental Hall A during February 2017 for the $^{40}$Ar target and December 2017 for the other targets. The beam energy for the study was $2.2$ GeV in all cases, The momentum and angle settings were $17.5 ^\circ $ and $1.79$ GeV for $^{40}$Ar, and $17.0 ^\circ $ and $1.99$ GeV for the other fluids. Analysis of these data shows that a simple quadratic polynomial function normalized to zero current density provides an excellent model for all target fluids.
 
 
 \section{Target System}
 
-A modular design was used for the target ladder in order to install the tritium cell after all the other targets were placed. 
-Particularly, the tritium cell was the only cell that was not filled onsite at Jefferson Lab. It was filled at the Savannah River 
-site Tritium Enterprises (SRTE), and it was shipped in a dual vessel, in order  to determine if the cell failed without having to
-open the container. The container was located in Hall A at all time in Jefferson Lab, with only qualified personal access. The cell only was out of the container while it was inside the scattering chamber. 
+The modular design allows multiple cell configurations. It also enables individual cells to be installed in special configurations of the standard Hall A Cryogenic target; this was the case for the ${^40}$Ar target (see Figure \ref{argon}). Another feature is that it allows cells to be filled at off site locations other instead of Jefferson Lab. The tritium cell was filled at Savannah River Site (SRS) by Savannah River Tritium Enterprises (SRTE). The tritium cell was filled with about 0.1 grams of tritium gas to a room temperature pressure of about 200 psia. It was shipped in a special purpose transport container called the Bulk Tritium Shipping Package (BTSP). Including the cell this system provided continuous triple layer confinement though out the shipping and handling process. This design also allowed the tritium cell to be stored in a special storage container in Hall A while normal Hall installation activities were completed. The tritium cell was installed after all other preparatory tasks were completed.
 
 \begin{figure}[htbp]
-\centering
-  % Se pueden incluir figuras jpeg al compilar con PDFLatex
-  \includegraphics[width=6.5cm]{images/ladder.jpg}\\
-  \caption{Ladder Assembly. Five cells were assembled during Fall 2017 to Spring 2018, $^{3}H$, $^{2}H$, $^{1}H $, $^{3}He$ and empty cell from top to bottom
- }\label{ladder}
+	\centering
+	\includegraphics[width=6.5 cm]{images/Ar-cell.jpg}\\
+	\caption{Argon cell installation. A cell filled with $^{40}$Ar was installed on the standard Hall A Cryogenic Target in place of the loop 3 cell}
+	\label{argon}
 \end{figure}
 
-The target ladder allows a total of five cells and it is shown in Figure \ref{ladder}.  The bottom cell is an empty cell used for background measurements. The tritium group of experiments cycled between the $^{3}$H, $^{2}$H, $^{1}$H, $^{3}$He target cells for most of the beam time. The only gas target used in February 2017 was $^{40}$Ar.
+\begin{figure}[htbp]
+  \centering
+  % Se pueden incluir figuras jpeg al compilar con PDFLatex
+  \includegraphics[width=6.5cm]{images/ladder.jpg}\\
+  \caption{Ladder Assembly. Five cells were assembled during Fall 2017 to Spring 2018, $^{3}H$, $^{2}H$, $^{1}H $, $^{3}He$ and empty cell from top to bottom}
+  \label{ladder}
+\end{figure}
 
-The vacuum system of the target provided containment and confinement during normal operations. This system includes the scattering chamber, 
-the pumping system, the upstream beam isolation window and the beam dump line.  
+The configuration of the tritium target is shown in Figure \ref{ladder}. In this configuration, there are (from top to bottom) four cells loaded with $^{3}$H, $^{2}$H, $^{1}$H, and /$^{3}$He as well as a fifth empty cell which was used for background measurements. The cells are contained in a scattering chamber which is under vacuum. The scattering chamber vacuum is isolated from the upstream beam line vacuum by a 0.2 mm thick beryllium window. This window is roughly 30 cm upstream of the target center and is mounted on a reentrant tube that also contains a $15$ $cm$ long tungsten collimator with an inner diameter of 12.7 mm. The target vacuum, with a pumping system directed to an exhaust stack, provided a second layer of tritium confinement. An exhaust system, (together with strict access controls) capable of maintaining a slight negative pressure in the experimental Hall ensured that the Hall boundary was a third layer of confinement.
 
-The scattering chamber has a volume of about 1900 liters and its configuration has been used in Hall A for more than 15 years. 
-In this particular set of experiments, the chamber has an extra beryllium (99.8$\%$) window to separate the upstream beamline 
-and the scattering chamber. The window contains a collimator to minimize beam scraping on the target cell walls. Furhermore, 
-the downstream beam dump line was isolated from the scattering chamber using a gate valve during installation, maintenance and removal operations of the target cells. 
+Each cell, excluding the fill valve assembly, is machined from ASTM B209 aluminum 7075-T651 plate. Each target cell has a cigar-tube shaped active fluid space with a length of $25$ $cm$ and a diameter of $12.7$ $cm$. The total volume of the cell (including the non active region) is $33.38 \pm 0.2$ cm$^{3}$. The thickness of the nearly flat entrance window and hemispherical exit window is nominally $0.25$ $mm$. The parameters at the time of loading for each cell are summarized in Table \ref{tab:fill_tar}. Due to machining tolerances, the wall thickness of each cell varies slightly over its length. Thickness measurements were performed for each cell at several locations (schematically represented in Figure \ref{cellconfig} and are summarized in Table \ref{cell}. The $^{40}$Ar cell, installed in February 2017 in a special configuration, was later installed as the empty (or dummy) cell for the tritium group of experiments. Table \ref{tab:cell} shows the $^{40}$Ar and the Empty Cell in a single column. The $^{40}$Ar experiment employed two aluminum foils (dummy target), with total thickness matching the radiation length of the argon filled cell, to measure backgrounds.
 
-In addition, a special exhaust system was built to remove tritium from the scattering chamber and/or Hall A in a controlled manner 
-in case the the tritium containment systems failed. A temporary isolation room fixed to the scattering chamber, known as 
-the transfer hut, was also directly attached to the scattering chamber during instalation. The scattering chamber was connected directly to the exhaust system. Thus, the air pulled through the hut into the chamber went directly through the exhaust system.  
+The entire target assembly, of five cells and assorted solid targets, was cooled with $15K$ helium from the Jefferson Lab End Station Refrigerator (ESR). The $15K$ helium was preheated to $40K$ and used to cool a heat sink to which the cell assemblies were attached. This removed the modest amount of heat generated by the electron beam passing through the target fluid, cell entrance and cell exit, which, in total, was about $15W$. To ensure cell integrity, the maximum beam current permitted on any of the cells was $22.5$ $\mu A$ \cite{engreport}. The heat generated by the tritium decay is very small, about $50$ $mW$ and was negligible.
 
-
-\subsection{Target Cell Characteristics}
-
-The entire target assembly was cooled with $15K$ helium from the Jefferson Lab End Station Refrigerator (ESR). The $15K$ helium was preheated to $40K$ and used to cool a heat sink attached to the cell assemblies. This removed about $15W$ of heat that is generated by the electron beam. 
-The beam current allowed on the tritium cell was limited to a maximum of $22.5$ $\mu A$ \cite{engreport}.
-
-The heat generated by the tritium decay is very small, about $50$ $mW$. The power deposited in the windows and gas is also relatively 
-small with a beam current of $22.5$ $\mu A$. There was a deposited power of approximately $4.7$ $W$ in the entrance window, $5.1$ $W$ 
-in the exit window, $3.8$ $W$ in the tritium gas, approximately $8.6$ $W$ in the hydrogen, deuterium and helium gases \cite{celldes}.
- 
-The volume of the cells is  $33.38 \pm 0.2$ cm$^{2}$ and the filling parameters for each cell are summarized in Table \ref{tab:fill_tar} at room temperature. The target thickness values of this table are changed with the bean current and ultimately the percentage changed in the density will be applied as a correction factor to this values. The gas with major density used in the experiments was $^{40}$Ar and the lower density target was $^{3}H$.  Additionally, the top view of the cell is shown in Figure \ref{fig:cellconfig},  it shows the beam direction and the two windows of the cell.
+%The target thickness values of this table are changed with the beam current and ultimately the percentage changed in the density will be applied as a correction factor to this values. The gas with major density used in the experiments was $^{40}$Ar and the lower density target was $^{3}H$.  Additionally, the top view of the cell is shown in Figure \ref{fig:cellconfig},  it shows the beam direction and the two windows of the cell.
 
 \begin{table}[!h]
 \centering
 \begin{adjustbox}{width=0.5\textwidth}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-Target   & Mass (mg)           & \begin{tabular}[c]{@{}c@{}}$\rho$ t (mg/cm$^{2})$\\ Target thickness\end{tabular} & \begin{tabular}[c]{@{}c@{}}Filling Pressure\\ (psia) \end{tabular} & Temperature (K)  \\ \hline
-$^{40}$Ar  & $1942.7$              & $1455$                                           & $500$ & $291$ \\ \hline
-$^{3}$H  & $102.8$              & $77 \pm 0.01$ & $203$                                                             & $291$\\ \hline
-$^{3}$He & $ 71.3  $  & $53.4 \pm 0.6$ & $252.7$                                                           & $294.3$ \\ \hline
-$^{2}$H  & $189.86$ & $142.2 \pm 0.8$  & $514.7$                                                           & $296.1$
-\\ \hline
-$^{1}$H  & $94.53 $ & $70.8 \pm 0.4$  & $514.7$                                                          & $297.4$
-\\ \hline
+\begin{tabular}{|c|c|c|c|}
+	\hline 
+	Target Fluid & Fill Pressure & Fill Temp    & Thickness \\
+	    		 &	$kPa$)		 &	($K$) 	    & ($mg/cm^2$) \\
+	\hline 
+	$^{40}$Ar	 & $3447$ 		 & $291$	    &  $1455\pm9.2$ \\ 
+	\hline 
+	$^{3}$H 1 	 & $1400$		 & $296.3$	    &  $85.1\pm 0.83$ \\ 
+	\hline 
+	$^{3}$H 2	 & $1393$		 & $293.8$		&  $84.79\pm0.82$ \\
+	\hline
+	$^{3}$He	 & $1772$		 & $294.3$	    &  $53.37\pm0.57$ \\ 
+	\hline 
+	$^{2}$H 	 & $3549$		 & $296.1$	    &  $142.15\pm0.80$ \\ 
+	\hline 
+	$^{1}$H 	 & $3549$		 & $297.4$	    &  $70.80\pm0.40$ \\ 
+	\hline 
 \end{tabular}
 \end{adjustbox}
-\caption{Gas target filling parameters. Temperatures have an uncertainty of $0.1\circ $. $^{40}$Ar taken from \cite{ar_config} and for the other targets from \cite{cellconfig}. }. 
+\caption{Load data for the gas cells. Temperatures have an uncertainty of $0.1K$. Values for the $^{40}$Ar cell are from  Ref\cite{ar_config}; for all others they are from REF\cite{cellconfig}. }.
 \label{tab:fill_tar}
 \end{table}
+ 
+
+
+%\begin{table}[!h]
+%\centering
+%\begin{adjustbox}{width=0.5\textwidth}
+%\begin{tabular}{|c|c|c|c|c|}
+%\hline
+%Target   & Mass (mg)           & \begin{tabular}[c]{@{}c@{}}$\rho$ t (mg/cm$^{2})$\\ Target thickness\end{tabular} & \begin{tabular}[c]{@{}c@{}}Filling Pressure\\ (psia) \end{tabular} & Temperature (K)  \\ \hline
+%$^{40}$Ar  & $1942.7$              & $1455$                                           & $500$ & $291$ \\ \hline
+%$^{3}$H    & $102.8$              & $77 \pm 0.01$ & $203$                                                             & $291$\\ \hline
+%$^{3}$He   & $ 71.3  $  & $53.4 \pm 0.6$ & $252.7$                                                           & $294.3$ \\ \hline
+%$^{2}$H    & $189.86$ & $142.2 \pm 0.8$  & $514.7$                                                           & $296.1$
+%\\ \hline
+%$^{1}$H    & $94.53 $ & $70.8 \pm 0.4$  & $514.7$                                                          & $297.4$
+%\\ \hline
+%\end{tabular}
+%\end{adjustbox}
+%\caption{Gas target filling parameters. Temperatures have an uncertainty of $0.1\circ $. $^{40}$Ar taken from \cite{ar_config} and for the other targets from \cite{cellconfig}. }. 
+%\label{tab:fill_tar}
+%\end{table}
 
 \begin{figure}[!h]
-\centering
+  \centering
   \includegraphics[width=\linewidth]{images/tgt_measurements.png}\\
-  \caption{Measurement locations on the cells \cite{cellconfig}. 
- }\label{fig:cellconfig}
+  \caption{Measurement locations on the cells represented schematically \cite{cellconfig}.}
+  \label{fig:cellconfig}
 \end{figure}
 
-The gas targets are contained in a $25$ $cm$ long by $1.3$ $cm$ diameter aluminum (7075-T6) sealed system, the target cell is shown in Figure \ref{cell}. 
-The alloy 7075-T6 was chosen since it has high thermal conductivity, high yield strength, and it is used for target cells at JLab commonly. 
-The windows for beam entrance and exit were designed to be $0.0254$ $cm$ and $0.0279$ $cm$ thick, respectively \cite{celldes}. However, due to the fact that the cell was machined out of a single aluminum piece, the exit window has slightly different measurements for each target, as it is summarized in Table \ref{tab:cell}.
+%The gas targets are contained in a $25$ $cm$ long by $1.3$ $cm$ diameter aluminum (7075-T6) sealed system, the target cell is shown in Figure \ref{cell}. 
+%The alloy 7075-T6 was chosen since it has high thermal conductivity, high yield strength, and it is used for target cells at JLab commonly. 
+%The windows for beam entrance and exit were designed to be $0.0254$ $cm$ and $0.0279$ $cm$ thick, respectively \cite{celldes}. However, due to the fact that the cell was machined out of a single aluminum piece, the exit window has slightly different measurements for each target, as it is summarized in Table \ref{tab:cell}.
 
-The $^{40}$Ar cell was used in February 2017, and after the experiment finished, the cell was reused as the dummy cell for the tritium set of experiments. Table \ref{tab:cell} shows the $^{40}$Ar and the Dummy Cell as a single one. $^{40}$Ar experiment did not have a dummy cell, instead, it used two aluminum foils with in order to calculate the background contamination in the gas.
+
 
 \begin{table*}[!h]
 \centering
 \begin{adjustbox}{width=1\textwidth}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
-Cell Position        & \begin{tabular}[c]{@{}c@{}} $^{40}$Ar/Dummy Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{3}H$ Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{1}H$ Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{2}H$ Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{3}He$ Cell\\ Thickness $(mm)$\end{tabular} \\ \hline
+Location        & \begin{tabular}[c]{@{}c@{}} $^{40}$Ar/Empty Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{3}H$ Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{1}H$ Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{2}H$ Cell\\ Thickness $(mm)$\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{3}He$ Cell\\ Thickness $(mm)$\end{tabular} \\ \hline
 Entrance               &      $0.254 \pm 0.0051$                                                  & $0.253 \pm 0.004$                                                     & $0.311 \pm 0.001$                                                     & $0.215 \pm 0.004$                                                     & $0.203 \pm 0.007$                                                      \\ \hline
 Exit                    &    $0.279 \pm 0.0051$                                                  & $0.343 \pm 0.047$                                                     & $0.330 \pm 0.063$                                                     & $0.294 \pm 0.056$                                                     & $0.328 \pm 0.041$                                                      \\ \hline
 Exit left              &      $0.406 \pm 0.0051$                                                 & $0.379 \pm 0.007$                                                     & $0.240 \pm 0.019$                                                     & $0.422 \pm 0.003$                                                     & $0.438 \pm 0.010$                                                      \\ \hline
@@ -248,8 +248,8 @@ $0.332 \pm 0.011$                                &
 $0.477 \pm 0.011$                                 \\ \hline
 \end{tabular}
 \end{adjustbox}
-\caption{Cell wall thickness measurements for all the gas targets. Ar taken from \cite{ar_config} and for the other targets from \cite{cellconfig}.}
-\label{tab:cell}
+	\caption{Cell wall thickness measurements for all gas targets. Values for the $^{40}$Ar cell are from  Ref\cite{ar_config}; for all others they are from REF\cite{cellconfig}.}
+	\label{tab:cell}
 \end{table*}
 
 
@@ -264,10 +264,7 @@ $0.477 \pm 0.011$                                 \\ \hline
 
 \section{Experimental Hall A}
 
-The data was taken with the LHRS. The basic components of the LHRS are
-one non superconducting quadrupole(Q1),two superconducting quadrupoles (Q) and one superconducting dipole (D) in a Q1QDQ configuration. The quadrupoles align the electron while the dipole determines the momentum of the electrons that get to the detectors.
-
-After passing the magnets, the scattered electrons go through two Vertical Drift Chambers (VDCs), where the electrons ionize the gas inside the chambers. Wi9ith the information the position and angle of the trajectory are found. Then, the trigger scintillators s0 and s2, with the Cherenkov detector filled with CO2 between the trigger scintillator planes are found. They identify the electrons with $99 \%$  efficiency and the threshold for pions is $4.8$ $GeV$ . Finally, the preshower and shower lead glasses blocks induce a cascade of pair production and bremsstrahlung radiation from energetic particles, which are used for the measurement of the energy of the electrons \cite{Alcorn:2004sb}.
+The data were acquired with the LHRS. The basic components of the LHRS are one non superconducting quadrupole(Q1), a super conducting quadrupole (Q2) a superconducting dipole (D) followed by a super conducting quadrupole (Q3) in a Q-Q-D-Q configuration. The quadrupoles focus scattered charged particles while the dipole directs these particles, within a given momentum range, to the detectors. After passing through the spectrometer magnets, the scattered electrons go through two Vertical Drift Chambers (VDCs), where the electrons ionize the gas inside the chambers. With the information the position and angle of the trajectory are found. Then, the trigger scintillators s0 and s2, with the Cherenkov detector filled with CO2 between the trigger scintillator planes are found. They identify the electrons with $99 \%$  efficiency and the threshold for pions is $4.8$ $GeV$ . Finally, the preshower and shower lead glasses blocks induce a cascade of pair production and bremsstrahlung radiation from energetic particles, which are used for the measurement of the energy of the electrons \cite{Alcorn:2004sb}.
 
 
 \section{Beam Current Monitor (BCM)}
