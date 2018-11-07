@@ -31,7 +31,7 @@
 \usepackage{xcolor}
 \usepackage{textcomp}
 \usepackage{graphicx}
-%\usepackage{balance}
+\usepackage{balance}
 %\usepackage[LGRgreek]{mathastext}
 
 %% The amsthm package provides extended theorem environments
@@ -73,13 +73,13 @@
 
 \author[UNH]{S. N. Santiesteban}
 \author[Kent]{S. Alsalmi}
+\author[JLab]{D. W. Higinbotham}
 \author[TN]{J. Bane}
 \author[FI]{J. Castellanos}
 \author[MIT]{R. Cruz-Torres}
 \author[VT]{H. Dai}
 \author[Kent]{T. Hague}
 \author[OD]{F. Hauenstein}
-\author[JLab]{D. W. Higinbotham}
 \author[argonne,CalTech]{R. J. Holt}
 \author[SB]{T.Kutz}
 \author[UNH]{S. Li}
@@ -89,6 +89,7 @@
 \author[Kent]{M. Nycz}
 \author[UVa]{ D. Nguyen}
 \author[hampton]{B. Pandey}
+\author[MIT]{A. Schmitd}
 \author[Kent]{Tong Su}
 \author[argonne]{Z. Ye}
 
@@ -135,7 +136,6 @@ Density \sep target system
 
 A modular gas cell target system was developed for use in Hall A at Jefferson Lab for the MARATHON experiment (E12-10-103)\cite{marathon}. The design was specifically developed to safely contain and operate with gaseous tritium. The modular design allows additional gas cells filled with other species of gas to be installed in the system concurrently. The target was also adapted for the additional experiments E12-11-112 ($x_{b}>1$) \cite{E12-11-112}, E12-14-011 ($e'p$) \cite{E12-14-011}, E12-17-003 (Hypernuclear) \cite{hypernuclear} and E12-14-009 (elastic) \cite{E12-14-009}.  MARATHON, together with these experiments, became known as the tritium group experiments which were performed from December 2017 through November 2018. However, prior to tritium operations, a target cell was loaded with argon gas and used by the experiment E12-14-012 (Argon) \cite{E12-14-012} during Spring of 2017. 
 
-
 While the performance of the target was an important consideration, the primary objective of the target system design and construction was to ensure safe operations with tritium gas under all conditions including reasonable upset conditions. These conditions included target cell preparations, loading, storage, transportation, installation, removal, and beam operations. This was accomplished with a modular design, rigorous fabrication and testing, proper quality assurance (QA) and quality control (QC) and multiple layers of containment/confinement. 
  
 In addition to a brief description of the target, we present the beam current dependent density of the five gases used 
@@ -144,7 +144,7 @@ with the target system, $^{3}$H, $^{3}$He, $^{2}$H, $^{1}$H and $^{40}$Ar. The e
 
 \section{Target System}
 
-The modular design allows multiple cell configurations. It also enables individual cells to be installed in special configurations of the standard Hall A Cryogenic target; this was the case for the ${^40}$Ar target (see Figure \ref{argon}). Another feature is that it allows cells to be filled at off site locations other instead of Jefferson Lab. The tritium cell was filled at Savannah River Site (SRS) by Savannah River Tritium Enterprises (SRTE). The tritium cell was filled with about 0.1 grams of tritium gas to a room temperature pressure of about 200 psia. It was shipped in a special purpose transport container called the Bulk Tritium Shipping Package (BTSP). Including the cell this system provided continuous triple layer confinement though out the shipping and handling process. This design also allowed the tritium cell to be stored in a special storage container in Hall A while normal Hall installation activities were completed. The tritium cell was installed after all other preparatory tasks were completed.
+The modular design allows multiple cell configurations. It also enables individual cells to be installed in special configurations of the standard Hall A Cryogenic target; this was the case for the $^{40}$Ar target (see Figure \ref{argon}). Another feature is that it allows cells to be filled at off site locations other instead of Jefferson Lab. The tritium cell was filled at Savannah River Site (SRS) by Savannah River Tritium Enterprises (SRTE). The tritium cell was filled with about 0.1 grams of tritium gas to a room temperature pressure of about 200 psia. It was shipped in a special purpose transport container called the Bulk Tritium Shipping Package (BTSP). Including the cell this system provided continuous triple layer confinement though out the shipping and handling process. This design also allowed the tritium cell to be stored in a special storage container in Hall A while normal Hall installation activities were completed. The tritium cell was installed after all other preparatory tasks were completed.
 
 \begin{figure}[htbp]
 	\centering
@@ -194,8 +194,6 @@ The entire target assembly, of five cells and assorted solid targets, was cooled
 \caption{Load data for the gas cells. Temperatures have an uncertainty of $0.1K$. Values for the $^{40}$Ar cell are from  Ref\cite{ar_config}; for all others they are from REF\cite{cellconfig}. }.
 \label{tab:fill_tar}
 \end{table}
- 
-
 
 %\begin{table}[!h]
 %\centering
@@ -387,17 +385,16 @@ Figure \ref{fig:bk_empty} shows the spectra of the charge normalized yield for t
 \label{tab:contamination_al}
 \end{table}
 
- 
 \section{Gas Target Results}
 
 The density correction was determined for each gas species by modeling $Y_{norm}$ as a function of beam current $I_{beam}$. The function is then normalized to $1$ for $I_{beam}=0$. The density each gas cell for zero beam current is the same as that of the load density. Figures  \ref{fig:argon_data}, \ref{fig:tritium_data}, \ref{fig:helium_data}, \ref{fig:deuterium_data} and \ref{fig:hydrogen_data}, show the density correction for the different gas targets. It is easily seen that the density decreases with the current and that the behavior of the density correction factor $f$ is modeled well by a quadratic function
 
 \begin{equation}
-f = a\cdot I_{beam}^{2} + b \cdot I_{beam} + c.
+f(I_{beam}) = a\cdot I_{beam}^{2} + b \cdot I_{beam} + c.
 \label{eq:boiling_factor}
 \end{equation}
 
-\noindent Where $a$, $b$ and $c$ are the fit parameters. Table \ref{tab:fit_parameters} shows the fit parameters for each target, which can be used to calculate the density change of the gas targets for any current in the range $0-22.5$ $\mu A$. The error bar in the plots represents the statistical uncertainty, and the fit was calculated with respect to those values.
+\noindent Where $a$, $b$ and $c$ are the fit parameters. Table \ref{tab:fit_parameters} shows the fit parameters for each gas species. The density correction factor $f(I_{beam})$ is determined for each gas by substitution of these parameters in Eq \ref{eq:boiling_factor}. The density correction factor determined in this manner is valid for the current range $0-22.5$ $\mu A$. The error bar in the plots represents the statistical uncertainty only, and a fit was calculated with respect to those values with a $95\%$ confidence band in blue. The gray hatched $95\%$ confidence band represents a fit including both statistical and systematic uncertainties.
 
 \begin{figure}[!h]
 	\centering
@@ -435,9 +432,6 @@ f = a\cdot I_{beam}^{2} + b \cdot I_{beam} + c.
 \label{tab:fit_parameters}
 \end{table}
 
-
-
-
 \begin{figure*}[h]
 \begin{center}
   \begin{subfigure}{8cm}
@@ -468,9 +462,9 @@ f = a\cdot I_{beam}^{2} + b \cdot I_{beam} + c.
 
 
 
-\subsection{Density Factor Ratios}
-
-The tritium family of experiments measure the $^{3}H/^{3}He$ cross section ratio, since they are mirror nuclei.  Some of of the experiments also used the ratio of the $^{3}H/^{2}H $ and/or  $^{3}He/^{2}H $ . Therefore, the ratio of the density factors is used to make the corrections in the cross sections for the analysis. Figure \ref{fig:density_ratios} shows the ratio between the factor of density change for those nuclei. 
+%\subsection{Density Factor Ratios}
+%
+%The tritium family of experiments measure the $^{3}H/^{3}He$ cross section ratio, since they are mirror nuclei.  Some of of the experiments also used the ratio of the $^{3}H/^{2}H $ and/or  $^{3}He/^{2}H $ . Therefore, the ratio of the density factors is used to make the corrections in the cross sections for the analysis. Figure \ref{fig:density_ratios} shows the ratio between the factor of density change for those nuclei. 
 
 
 \begin{figure}[!h]
@@ -482,30 +476,28 @@ The tritium family of experiments measure the $^{3}H/^{3}He$ cross section ratio
 
 \subsection{Systematic Uncertainties}
 
-There are several corrections to take into account in this analysis, and since the current is different for every point, the uncertainties are evaluated at every point.  The systematic uncertainties are shown in Figures  \ref{fig:argon_data}, \ref{fig:tritium_data}, \ref{fig:helium_data}, \ref{fig:deuterium_data} and \ref{fig:hydrogen_data},  they   include the uncertainty in the charge, live-time and detectors calculations.
+Several corrections are applied to the data in this analysis. and since the current is different for every point, the uncertainties are evaluated at every point.  A confidence band for a fit including the systematic uncertainties are shown in Figures  \ref{fig:argon_data}, \ref{fig:tritium_data}, \ref{fig:helium_data}, \ref{fig:deuterium_data} and \ref{fig:hydrogen_data}. they include the uncertainty in the charge, live-time and detectors calculations.
 
-The BCM monitors cover a range of $0$ to $100$ $\mu A$. The Unser has a sensitivity of $4 mV/ \mu A$ \citep{denard}, but the offset drifts over time. The large background noise implies that the precision of the measurements at low current have a slightly higher uncertainty. In other words, the charge uncertainty is current dependent. Therefore, the uncertainty of the current and charge is estimated using the BCM calibration showed in Figure \ref{fig:dnew_cal}, using the error covariance matrix, and it represents the highest source of systematic uncertainty in this measurement.
+The BCM monitors are effective over a range from $0$ to $100$ $\mu A$. However, low current measurements have a slightly higher uncertaint causing the uncertainty in the charge to be current dependent. The uncertainty in the current and charge is estimated using the BCM calibration shown in Figure \ref{fig:dnew_cal}, using the error covariance matrix, and it represents the dominant source of systematic uncertainty in the determination of the density reduction factor $f(I_{beam})$.
 
+The background contamination coming from the entrance and exit windows also contribute as a source of systematic uncertainty. This is due to the thickness variations in the cell entrance and exit windows which can be seen in Figure \ref{fig:bk_empty}. Therefore, in order to calculate the background uncertainty in the measurement, the percentage of background was calculated in $y_{tar}$ steps of $3$ $cm$ starting from $8$ $cm$ out to $20$ $cm$ from the center of the target.  The same normalization procedure was followed for each of the different cuts in the reaction vertex region to calculate $f(I_{beam})$. Finally, the uncertainty in the background contamination is given by the standard deviation of the average of multiple $f(I_{beam})$ obtained with the different cuts. The standard deviation was never more than $1$ $\% $ for each current.
 
-The background contamination coming from the entrance and exit windows also contribute as a source of systematics uncertainty since the calculation implied some assumptions. Specifically, as shown in Figure \ref{fig:bk_empty}, the exit window thickness is slightly different for every target. Therefore, in order to calculate the background uncertainty in the measurement, the percentage of background was calculated in ranges of $3$ $cm$ starting from $8$ $cm$ out to $20$ $cm$ from the center of the target.  The same normalization procedure was followed for each of the different cuts in the reaction vertex region to calculate the percentage of density changed. Finally, the uncertainty in the background contamination is given by the standard deviation of the percentages obtained with the different cuts. The standard deviation was never more than $1$ $\% $ in each current.
-
-Furthermore, $1\% $ systematic errors were estimated for the live-time, VDC One-Track efficiency, trigger efficiency, detection and cut efficiencies of Gas Cerenkov and Pion Rejetors.
+Furthermore, $1\% $ systematic uncertainties were estimated for the live-time, VDC One-Track efficiency, trigger efficiency, detector and cut efficiencies of Gas Cerenkov and $\pi^{-}$ rejection.
 
 \subsection {Conclusions }
 
 Hall A at Jefferson Lab successfully ran the tritium set of experiments with an outstanding target system.  The maximum density change for each target is $9.7 \pm 0.5 \%$, $5.6 \pm 0.5\% $, $6.3 \pm 0.5\% $, $11.6\pm 0.5\% $ and $26.5 \pm 1 \%$ for $^{3}H$, $^{3}He$, $^{2}H$, $^{1}H$ and $^{3}H$, respectively at $22.5$ $\mu A$. 
 
 
-
 \section{Acknowledgments}
 %% \label{}
-We would like to thank to the target group for its outstanding work, specially to the Design Authority and Project Manager Dave Meekins. Furthermore, none of this work will be possible without the wonderful group of graduate students and postdocs who were the building blocks of the experiments. Besides, all the hall A staff and experiment spoke people were a big help in every step of the way. And, certainly special thanks to Douglas Higinbotham for all his invaluable support . 
+
+We wish to thank the staff of the Thomas Jefferson National Accelerator Facility especially the Accelerator staff and  Hall A and Target Group technical staffs. We also acknowledge the critical efforts of the Savannah River Site/Savannah River Tritium Enterprises group.
 
 
 \bibliographystyle{elsarticle-num} 
 \bibliography{references.bib}
-%\balance
 \end{document}
-%\endinput
+\endinput
 %%
 %% End of file `elsarticle-template-num.tex'.
