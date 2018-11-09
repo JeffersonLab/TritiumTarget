@@ -277,14 +277,26 @@ The data were acquired with the LHRS. For a detailed description of the LHRS see
 \section{Beam Current Monitor (BCM)}
 \label{BCM}
 
-The Beam Current Monitor (BCM) is a system of three independent devices and a current source. This system accounts for most  of the systematic uncertainty in the density study. 
-The BCM system consists of a toroidal sensor (Unser), located between an upstream and downstream RF cavity, and a data-acquisition system.
-A current source, which is contected to a wire which passes through the Unser, is used to calibrate the Unser immediately prior to each use of the device and
+The Beam Current Monitor (BCM) is a system of three independent devices and a current source. This system accounts for most  
+of the systematic uncertainty in the density study.  The BCM system consists of a toroidal sensor (Unser), located between 
+an upstream and downstream RF cavity, and a data-acquisition system.  A current source, which is contected to a wire which 
+passes through the Unser, is used to calibrate the Unser immediately prior to each use of the device and
 the Unser is then in turn used to calibrate the BCM's with the electron beam. 
 
-The Unser monitor is composed of two identical toroidal cores driven in opposite ways by an external source.  The DC component of the current flowing through the toroid sensor is detected by a magnetic modulator. The beam current in the cores produces a flux imbalance, which generates an output signal proportional to the even harmonics of the frequency of excitation, In the absence of DC current, the sum of the signals is zero~\cite{denard}. 
+The Unser monitor is composed of two identical toroidal cores driven in opposite ways by an external source.  
+The DC component of the current flowing through the toroid sensor is detected by a magnetic modulator. The 
+beam current in the cores produces a flux imbalance, which generates an output signal proportional to the 
+even harmonics of the frequency of excitation, In the absence of DC current, the sum of the signals is zero~\cite{denard}. 
 
-The temperature controlled Unser has sensitivity to beam current of about $4$ $mV/\mu A$ and has a noise canceled stability within $0.1\%$ \cite{denard} It also has a large offset drift which prevents the use of the Unser for long term measurements of the beam current. Therefore, the Unser is only used to measure the absolute beam current when calibrating the RF cavities which are then used to continuously monitor the beam current. These calibrations are required periodically though out the course of an experiment. To reduce the effects of the noise from the Unser output, it is first filtered through a voltage to frequency (V/F) converter. This frequency output is then used in the data acquisition system. Figure \ref{fig:unser_cal} shows the Unser calibration with a known DC current source, the gain of the Unser is $0.0002497 \pm 9.6 \times 10^{-7} $ $\mu A/Hz$. Over time, the Unser gain has shown to be of $4$ $mV/\mu A$.
+The temperature controlled Unser has sensitivity to beam current of about $4$ $mV/\mu A$ and has a noise canceled 
+stability within $0.1\%$~\cite{denard}.  The system does have a DC offset which slowly drifts which typically 
+requires the current calibration to be done immediately prior to using it for an absolute current calibration.
+of the RF cavities.  Once calibrated, the RF cavities are used to continuously monitor the beam current. 
+The calibrations are checked periodically though out the course of an experiment. 
+To put the signals from the Unser and RF cavities into the scalers of Hall's fast data aquitions system,
+a voltage to frequency (V/F) converter is used along with a distrinater. 
+Figure \ref{fig:unser_cal} shows the Unser calibration with a known DC current source, 
+the response of the system is found to be $0.0002497 \pm 9.6 \times 10^{-7} $ $\mu A/Hz$. 
 
 \begin{figure}[!h]
     \centering
