@@ -2,9 +2,8 @@
 %
 % Gas Target NIM Paper 
 %
-% Updated 22 October 2018 by Natalie and merged
+% Updated 17 November 2018 by Higinbotham
 %
-
 %\documentclass[preprint,12pt]{elsarticle}
 
 %% Use the option review to obtain double line spacing
@@ -18,25 +17,24 @@
 %% \documentclass[final,3p,times,twocolumn]{elsarticle}
 %% \documentclass[final,5p,times]{elsarticle}
 %%\documentclass[final,5p,times,twocolumn,balance]{elsarticle}
+
 \documentclass[final,5p,times,twocolumn]{elsarticle}
+\usepackage{amsmath, amssymb, amsfonts, latexsym}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+
 
 %% For including figures, graphicx.sty has been loaded in
 %% elsarticle.cls. If you prefer /to use the old commands
-\usepackage{amsmath, amssymb, amsfonts, latexsym}
-\usepackage{epsfig}
-\usepackage{subcaption}
-\usepackage{adjustbox}
-\usepackage{mathtools}
-\usepackage{amssymb}
-\usepackage{xcolor}
-\usepackage{textcomp}
-\usepackage{graphicx}
-\usepackage{balance}
+%\usepackage{epsfig}
+%\usepackage{mathtools}
+%\usepackage{xcolor}
+%\usepackage{textcomp}
+%\usepackage{balance}
 %\usepackage[LGRgreek]{mathastext}
-
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
-
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers.
@@ -49,7 +47,6 @@
 \begin{frontmatter}
 
 %% Title, authors and addresses
-
 %% use the tnoteref command within \title for footnotes;
 %% use the tnotetext command for theassociated footnote;
 %% use the fnref command within \author or \address for footnotes;
@@ -82,7 +79,7 @@
 \author[VT]{H.~Dai}
 \author[Kent]{T.~Hague}
 \author[OD]{F.~Hauenstein}
-\author[JLab]{D.~W.~Higinbotham}
+\author[JLab]{D.~W.~Higinbotham\corref{cor1}}
 \author[argonne,CalTech]{R.~J.~Holt}
 \author[SB]{T.~Kutz}
 \author[UNH]{S.~Li}
@@ -96,6 +93,7 @@
 \author[Kent]{Tong~Su}
 \author[argonne]{Z.~Ye}
 
+\cortext[cor1]{Corresponding Author: doug@jlab.org}
 
 \address[UNH]{University of New Hampshire, Durham, New Hampshire 03824, USA}
 \address[Kent]{Kent State University, Kent, Ohio 44240, USA}
