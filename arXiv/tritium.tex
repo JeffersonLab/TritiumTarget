@@ -2,7 +2,10 @@
 % Gas Target NIM Paper 
 %
 
-\documentclass[final,5p,times,twocolumn]{elsarticle}
+%\documentclass[final,5p,times,twocolumn]{elsarticle}
+\documentclass[review,numbers,sort&compress]{elsarticle}
+
+\usepackage{lineno}
 \usepackage{amsmath, amssymb, amsfonts, latexsym}
 \usepackage{subcaption}
 \usepackage{adjustbox}
@@ -11,6 +14,8 @@
 \journal{Nuclear Instruments and Methods}
 
 \begin{document}
+
+\linenumbers
 
 \begin{frontmatter}
 
@@ -38,6 +43,7 @@
 \author[UNH]{S.~N.~Santiesteban}
 \author[Kent]{S.~Alsalmi}
 \author[JLab]{D.~Meekins}
+\author[WM]{C.~Ayerbe Gayoso}
 \author[TN]{J.~Bane}
 \author[WM]{S.~Barcus}
 \author[SM]{J.~Campbell}
@@ -53,7 +59,7 @@
 \author[COL]{H.~Liu}
 \author[JLab]{R.~E.~McClellan}
 \author[Kent]{M.~Nycz}
-\author[UVa]{ D.~Nguyen}
+\author[UVA]{ D.~Nguyen}
 \author[hampton]{B.~Pandey}
 \author[VT]{V.~Pandey}
 \author[MIT]{A.~Schmidt}
@@ -86,7 +92,7 @@ to complete the MARATHON experiment which required, among other species, tritium
 The system has been used in several of the 12 GeV era experiments in Experimental Hall A using the Jefferson Lab 
 Continuous Electron Beam Accelerator Facility (CEBAF). Thus far, the cells have been loaded with the gas 
 species $^{3}$H, $^{3}$He, $^{2}$H, $^{1}$H and $^{40}$Ar and operated in nominal beam currents of up to $22.5$~$\mu$A.  
-Each cell is $25$~cm long with a diameter of $1.3$~cm.  While the gas density of the cells at the time of loading is known, 
+While the gas density of the cells at the time of loading is known, 
 the density of each gas varies uniquely when heated by the electron beam. To extract experimental cross sections using 
 these cells the beam current dependent density of each target fluid must be determined. In this study, data from measurements 
 with several beam currents within the range of $2.5$ to $22.5$~$\mu$A on each target fluid are presented. Additionally, 
@@ -111,8 +117,9 @@ Density \sep target system
 
 \section{Introduction}
 
-A modular gas cell target system was developed for use in Hall A at Jefferson Lab for the MARATHON experiment (E12-10-103)\cite{marathon}. 
-The design was specifically developed to safely contain and operate with gaseous tritium~\cite{Brajuskovic:2013ymh}. 
+A modular gas cell target system was developed for use in Hall A at Jefferson Lab for the MARATHON experiment (E12-10-103)\cite{marathon}.
+The design was specifically developed to safely contain and operate with gaseous tritium.  It is similar in luminosity and characteristics 
+to the design purposed in Ref.~\cite{Brajuskovic:2013ymh}.
 The modular design allows additional gas cells filled with other species of gas to be installed in the system concurrently. The target was 
 also adapted for the additional experiments E12-11-112 ($x_{b}>1$) \cite{E12-11-112}, E12-14-011 ($e'p$) \cite{E12-14-011}, 
 E12-17-003 (Hypernuclear) \cite{hypernuclear} and E12-14-009 (elastic) \cite{E12-14-009}.  
@@ -139,32 +146,34 @@ provides an excellent model for all target fluids.
 
 \section{Target System}
 
-The modular design allows multiple cell configurations. It also enables individual cells to be installed in special configurations 
+The modular design allows for multiple cell configurations. It also enables individual cells to be installed in special configurations 
 of the standard Hall A Cryogenic target; this was the case for the $^{40}$Ar target (see Figure \ref{argon}). Another feature is that 
 it allows cells to be filled at off site locations other than Jefferson Lab.  The tritium cell was filled at Savannah River 
-Site (SRS) by Savannah River Tritium Enterprises (SRTE).  
-The tritium cell was filled with about 0.1 grams of tritium gas to a room temperature pressure of about 200 psia. It was shipped 
+Site (SRS) by Savannah River Tritium Enterprises (SRTE), with about 0.1 grams
+of tritium gas to a room temperature absolute  pressure of about 1.38 MPa. It was shipped 
 in a special purpose transport container called the Bulk Tritium Shipping Package (BTSP). Including the cell this system provided 
-continuous triple layer confinement though out the shipping and handling process. This design also allowed the tritium cell to be 
-stored in a special storage container in Hall A while normal Hall installation activities were completed. The tritium cell was 
-installed after all other preparatory tasks were completed.     
-As a sealed gas cell, this tritium target system was far simplar to operate then previous tritium target designs~\cite{Beck:1989bi}. 
+continuous triple layer confinement though out the shipping and handling
+process. This design also allowed the tritium cell to be placed  in a special
+storage container in Hall A while normal Hall installation activities were
+completed. The tritium cell was installed after all other preparatory tasks were completed.     
+The modular sealed gas cell represents a departure from previous designs~\cite{Beck:1989bi}. 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=7.5cm]{Ar-cell-crop.jpg}\\
+	\includegraphics[width=0.8\textwidth]{Ar-cell.jpg}\\
 	\caption{Argon cell installation. A cell filled with $^{40}$Ar was installed on the standard Hall A Cryogenic Target in place of the loop 3 cell.}
 	\label{argon}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=7cm]{ladder.jpg}\\
-  \caption{Ladder Assembly. Five cells were assembled during Fall 2017 to Spring 2018, $^{3}$H, $^{2}$H, $^{1}$H, $^{3}$He and empty cell from top to bottom.}
+  \includegraphics[width=0.8\textwidth]{ladder.jpg}\\
+  \caption{Ladder assembly showing the five cells, , $^{3}$H, $^{2}$H, $^{1}$H, $^{3}$He and empty cell from top to bottom, 
+           as assembled during Fall 2017 to Spring 2018 run period.}
   \label{ladder}
 \end{figure}
 
-The configuration of the tritium target is shown in Figure \ref{ladder}. In this configuration, there are (from top to bottom) 
+The configuration of the target system for the tritium experiments is shown in Figure \ref{ladder}. In this configuration, there are (from top to bottom) 
 four cells loaded with $^{3}$H, $^{2}$H, $^{1}$H, and $^{3}$He as well as a fifth empty cell which was used for background 
 measurements. The cells are contained in a scattering chamber which is under vacuum. The scattering chamber vacuum is isolated 
 from the upstream beam line vacuum by a 0.2~mm thick beryllium window. This window is roughly 30~cm upstream of the target center 
@@ -179,7 +188,7 @@ is $33.38 \pm 0.2$~cm$^{3}$. The thickness of the nearly flat entrance window an
 The parameters at the time of loading for each cell are summarized in Table \ref{tab:fill_tar}. Due to machining tolerances, the 
 wall thickness of each cell varies slightly over its length. Thickness measurements were performed for each cell at several 
 locations (schematically represented in Figure~\ref{fig:cellconfig} and are summarized in Table \ref{cell}. The $^{40}$Ar cell, 
-installed in February 2017 in a special configuration, was later installed as the empty (or dummy) cell for the tritium group 
+installed in February 2017 in a special configuration, was later evacuated and installed as the empty cell for the tritium group 
 of experiments. Table \ref{tab:cell} shows the $^{40}$Ar and the empty cell in a single column. The $^{40}$Ar experiment 
 employed two aluminum foils (dummy target), with total thickness matching the radiation length of the argon filled cell, 
 to measure backgrounds.
@@ -194,21 +203,21 @@ The heat generated by the tritium decay is very small, about 50~mW and was negli
 \begin{table}[!h]
 \centering
 \begin{adjustbox}{width=0.5\textwidth}
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{cccc}
 	\hline 
 	Target       & Fill Pressure & Fill Temp    & Thickness \\
 	     		 &	(kPa)		 &	(K) 	    & (mg/cm$^2$) \\
 	\hline 
 	$^{40}$Ar	 & $3447$ 		 & $291$	    &  $1455\pm9.2$ \\ 
-	\hline 
-	$^{3}$H-1 	 & $1400$		 & $296.3$	    &  $85.1\pm 0.83$ \\ 
-	\hline 
-	$^{3}$H-2	 & $1393$		 & $293.8$		&  $84.79\pm0.82$ \\
-	\hline
+	
+	$^{3}$H $1^{st}$ 	 & $1400$		 & $296.3$	    &  $85.1\pm 0.83$ \\ 
+	
+	$^{3}$H $2^{nd}$	 & $1393$		 & $293.8$		&  $84.79\pm0.82$ \\
+	
 	$^{3}$He	 & $1772$		 & $294.3$	    &  $53.37\pm0.57$ \\ 
-	\hline 
+	\
 	$^{2}$H 	 & $3549$		 & $296.1$	    &  $142.15\pm0.80$ \\ 
-	\hline 
+	
 	$^{1}$H 	 & $3549$		 & $297.4$	    &  $70.80\pm0.40$ \\ 
 	\hline 
 \end{tabular}
@@ -218,25 +227,6 @@ The heat generated by the tritium decay is very small, about 50~mW and was negli
 \label{tab:fill_tar}
 \end{table}
 
-%\begin{table}[!h]
-%\centering
-%\begin{adjustbox}{width=0.5\textwidth}
-%\begin{tabular}{|c|c|c|c|c|}
-%\hline
-%Target   & Mass (mg)           & \begin{tabular}[c]{@{}c@{}}$\rho$ t (mg/cm$^{2})$\\ Target thickness\end{tabular} & \begin{tabular}[c]{@{}c@{}}Filling Pressure\\ (psia) \end{tabular} & Temperature (K)  \\ \hline
-%$^{40}$Ar  & $1942.7$              & $1455$                                           & $500$ & $291$ \\ \hline
-%$^{3}$H    & $102.8$              & $77 \pm 0.01$ & $203$                                                             & $291$\\ \hline
-%$^{3}$He   & $ 71.3  $  & $53.4 \pm 0.6$ & $252.7$                                                           & $294.3$ \\ \hline
-%$^{2}$H    & $189.86$ & $142.2 \pm 0.8$  & $514.7$                                                           & $296.1$
-%\\ \hline
-%$^{1}$H    & $94.53 $ & $70.8 \pm 0.4$  & $514.7$                                                          & $297.4$
-%\\ \hline
-%\end{tabular}
-%\end{adjustbox}
-%\caption{Gas target filling parameters. Temperatures have an uncertainty of $0.1\circ $. $^{40}$Ar taken from \cite{ar_config} and for the other targets from \cite{cellconfig}. }. 
-%\label{tab:fill_tar}
-%\end{table}
-
 \begin{figure}[!h]
   \centering
   \includegraphics[width=\linewidth]{tgt_measurements.png}\\
@@ -244,32 +234,27 @@ The heat generated by the tritium decay is very small, about 50~mW and was negli
   \label{fig:cellconfig}
 \end{figure}
 
-%The gas targets are contained in a $25$ $cm$ long by $1.3$ $cm$ diameter aluminum (7075-T6) sealed system, the target cell is shown in Figure \ref{cell}. 
-%The alloy 7075-T6 was chosen since it has high thermal conductivity, high yield strength, and it is used for target cells at JLab commonly. 
-%The windows for beam entrance and exit were designed to be $0.0254$ $cm$ and $0.0279$ $cm$ thick, respectively \cite{celldes}. However, due to the fact that the cell was machined out of a single aluminum piece, the exit window has slightly different measurements for each target, as it is summarized in Table \ref{tab:cell}.
-
-
-
 \begin{table*}[!h]
 \centering
 \begin{adjustbox}{width=1\textwidth}
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{cccccc}
 \hline
 Location        & \begin{tabular}[c]{@{}c@{}} $^{40}$Ar/Empty Cell\\ Thickness (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{3}$H Cell\\ Thickness (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{1}$H Cell\\ Thickness (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{2}$H Cell\\ Thickness (mm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$^{3}$He Cell\\ Thickness (mm)\end{tabular} \\ \hline
-Entrance               &      $0.254 \pm 0.0051$                                                  & $0.253 \pm 0.004$                                                     & $0.311 \pm 0.001$                                                     & $0.215 \pm 0.004$                                                     & $0.203 \pm 0.007$                                                      \\ \hline
-Exit                    &    $0.279 \pm 0.0051$                                                  & $0.343 \pm 0.047$                                                     & $0.330 \pm 0.063$                                                     & $0.294 \pm 0.056$                                                     & $0.328 \pm 0.041$                                                      \\ \hline
-Exit left              &      $0.406 \pm 0.0051$                                                 & $0.379 \pm 0.007$                                                     & $0.240 \pm 0.019$                                                     & $0.422 \pm 0.003$                                                     & $0.438 \pm 0.010$                                                      \\ \hline
-Exit right              &       $0.421 \pm 0.0051$                                                 & $0.406 \pm 0.004$                                                     & $0.519 \pm 0.009$                                                     & $0.361 \pm 0.013$                                                     & $0.385 \pm 0.016$                                                      \\ \hline
-Mid left             &        $0.457 \pm 0.0051$                                                  & $0.435 \pm 0.001$                                                     & $0.374 \pm 0.004$                                                     & $0.447 \pm 0.009$                                                     & $0.487 \pm 0.060$                                                      \\ \hline
-Mid right             &        $0.432 \pm 0.0051$                                                  & $0.447 \pm 0.004$                                                     & $0.503 \pm 0.005$                                                     & $0.371 \pm 0.012$                                                     & $0.478 \pm 0.007$                                                    \\ \hline
-Entrance left      &          $0.508 \pm 0.0051$                                                  & $0.473 \pm 0.003$                                                     & $0.456 \pm 0.010$                                                     & $0.442 \pm 0.005$                                                     & $0.504 \pm 0.003$                                                      \\ \hline
+Entrance               &      $0.254 \pm 0.0051$                                                  & $0.253 \pm 0.004$                                                     & $0.311 \pm 0.001$                                                     & $0.215 \pm 0.004$                                                     & $0.203 \pm 0.007$                                                      \\ 
+Exit                    &    $0.279 \pm 0.0051$                                                  & $0.343 \pm 0.047$                                                     & $0.330 \pm 0.063$                                                     & $0.294 \pm 0.056$                                                     & $0.328 \pm 0.041$                                                      \\ 
+Exit left              &      $0.406 \pm 0.0051$                                                 & $0.379 \pm 0.007$                                                     & $0.240 \pm 0.019$                                                     & $0.422 \pm 0.003$                                                     & $0.438 \pm 0.010$                                                      \\ 
+Exit right              &       $0.421 \pm 0.0051$                                                 & $0.406 \pm 0.004$                                                     & $0.519 \pm 0.009$                                                     & $0.361 \pm 0.013$                                                     & $0.385 \pm 0.016$                                                      \\ 
+Mid left             &        $0.457 \pm 0.0051$                                                  & $0.435 \pm 0.001$                                                     & $0.374 \pm 0.004$                                                     & $0.447 \pm 0.009$                                                     & $0.487 \pm 0.060$                                                      \\ 
+Mid right             &        $0.432 \pm 0.0051$                                                  & $0.447 \pm 0.004$                                                     & $0.503 \pm 0.005$                                                     & $0.371 \pm 0.012$                                                     & $0.478 \pm 0.007$                                                    \\ 
+Entrance left      &          $0.508 \pm 0.0051$                                                  & $0.473 \pm 0.003$                                                     & $0.456 \pm 0.010$                                                     & $0.442 \pm 0.005$                                                     & $0.504 \pm 0.003$                                                      \\ 
 Entrance right     &		 $0.424 \pm 0.0051$                             & $0.425 \pm 0.003$                                & 
 $0.457 \pm 0.006$                                & 
 $0.332 \pm 0.011$                                & 
 $0.477 \pm 0.011$                                 \\ \hline
 \end{tabular}
 \end{adjustbox}
-	\caption{Cell wall thickness measurements for all gas targets. Values for the $^{40}$Ar cell are from  Ref.~\cite{ar_config}; for all others they are from Ref.~\cite{cellconfig}.}
+	\caption{Cell wall thickness measurements for all gas targets. Values for the $^{40}$Ar cell are from  Ref.~\cite{ar_config}; for all 
+    others they are from Ref.~\cite{cellconfig}.}
 	\label{tab:cell}
 \end{table*}
 
@@ -277,13 +262,12 @@ $0.477 \pm 0.011$                                 \\ \hline
 \begin{figure*}[!h]
 \centering
   \includegraphics[width=13cm]{tritium_cell.jpg}\\
-  %\includegraphics[width=\linewidth]{images/tritium_cell.jpg}\\
   \caption{Engineering design of an individual tritium gas target cell \cite{celldes}, units are in $cm$.
  }\label{cell}
 \end{figure*}
 
 
-\section{Experimental Hall A}
+\section{Hall A Spectrometers}
 
 The data were acquired with the LHRS. For a detailed description of the LHRS see Ref.~\cite{Alcorn:2004sb}. The basic components of the LHRS 
 are a normal conducting quadrupole (Q1), a super conducting quadrupole (Q2) a superconducting dipole (D) followed by a super conducting 
@@ -301,7 +285,7 @@ induce a cascade of pair production and bremsstrahlung radiation from which thei
 \label{BCM}
 
 The Beam Current Monitor (BCM) is a system of three independent devices and a current source~\cite{Denard:2001zg}. 
-This is a dedicated system in Hall A and while independ of the target effects, this system
+This is a dedicated system in Hall A and while independent of the target effects, this system
 is the dominate source of systematic uncertainty in the current dependent density studies presented
 herein.  The BCM system consists of a toroidal sensor (Unser)~\cite{Unser:1991dr}, located between 
 an upstream and downstream RF cavity, and a data-acquisition system.  A current source, which is connected to a wire which 
@@ -310,12 +294,12 @@ the Unser is then in turn used to calibrate the BCM's with the electron beam.
 
 The Unser monitor is composed of two identical toroidal cores driven in opposite ways by an external source.  
 The DC component of the current flowing through the toroid sensor is detected by a magnetic modulator. The 
-beam current in the cores produces a flux imbalance, which generates an output signal proportional to the 
+beam current passing through the cores produces a flux imbalance, which generates an output signal proportional to the 
 even harmonics of the frequency of excitation, In the absence of a DC current, the sum of the signals is zero~\cite{Denard:2001zg}. 
 
 The temperature controlled Unser has a sensitivity to beam current of about 4~$mV/\mu$A and has a noise canceled 
 stability within $0.1\%$~\cite{Denard:2001zg}.  The system does have a DC offset which slowly drifts which typically 
-requires the current calibration to be done immediately prior to using it for an absolute current calibration.
+requires the current calibration to be done immediately prior to using it for an absolute current calibration
 of the RF cavities.  Once calibrated, the RF cavities are used to continuously monitor the beam current. 
 The calibrations are checked periodically through out the course of an experiment. 
 To put the signals from the Unser and RF cavities into the scalers of Hall's fast data aquition system,
@@ -363,11 +347,11 @@ The density of the target is well known when loaded but, experience and simulati
 decrease the density of the target fluid in the beam path (local density). The magnitude of this effect depends on the 
 beam current and target fluid species and must be quantified to accurately determine cross sections and ratios or 
 other comparisons of data collected with the multiple gas cells~\cite{celldes}. 
-It was shown that the target density reaches equilibrium within an insignificant amount of time from when the 
+It was shown (with the exception of the argon cell) that the target density reaches equilibrium within an insignificant amount of time from when the 
 electron beam first impinges on the cell and the density was constant with stable beam current. The purpose of 
 these measurements and analysis is to develop a beam current dependent target density function for each gas species used.  
 
-In order to extract the density, the raw yield is measured for several beam currents. The normalized yield is 
+In order to extract the current dependent density correction the raw yield is measured for several beam currents. The normalized yield is 
 determined by applications of corrections  to the raw yield. These corrections include: total charge, 
 particle identification, acceptance cuts, detector efficiencies, and live times. The normalized yield $Y_{\rm{norm}}$ is then given by
 
@@ -381,9 +365,9 @@ $Q$ is the total charge, and $\epsilon $ is the combined efficiencies of detecto
 and events selection cuts and $LT$ is the live-time. Each one of these parameters is explained 
 in detail in the following sections.
 
-\subsection{Events Selection}
+\subsection{Event Selection}
 To improve counting efficiency and minimize dead time, a compound trigger was used. This trigger required both scintillator planes 
-and the Cherenkov detector to have a signal above threshold, in order to exclude $\pi^{-}$ events. In order to extract a good 
+and the Cherenkov detector to have signals above threshold, in order to exclude $\pi^{-}$ events. In order to extract a good 
 electron sample, several cuts were applied to the data. These cuts can be summarized in two groups: acceptance cuts, which 
 assure that the events are selected within an acceptable spectrometer phase space, and 
 tracking/particle iDentification (PID) Cuts, which focus on the selection of electrons scattered from the target fluid.
@@ -408,7 +392,7 @@ It was shown through the course of this study that as long as the sample of elec
 the results will remain invariant within 1$\%$ run to run.
 
 
-\subsection{Efficiencies Estimations } 
+\subsection{Estimation of Efficiencies} 
  
 A number of efficiencies were applied to the data to produce $Y_{\rm{norm}}$.  For simplicity, in this analysis 
 only electron events with one track in the VDC were selected.  
@@ -423,15 +407,16 @@ The ratio between the events recorded with the main and the efficiency trigger c
 The Cherenkov efficiency was calculated by selecting a clean sample of electrons detected in the Calorimeter 
 and counting the number of events that also were detected in the Cherenkov detector. The Calorimeter efficiency 
 was measured by selecting a clean sample of electrons in the Cherenkov detector and counting the number of 
-electrons that also fired the Calorimeter.
+these electrons that also fired the Calorimeter.
 
 \subsection{Live-Time Calculation } 
 
-The live-time is related with the limitation of the speed of data acquisition system (DAQ) to record events. It is dependent on the electronics, computers and trigger rate and is calculated using the ratio between the number of events recorded over the total number of events seen by the trigger. 
+The live-time is related with the limitation of the speed of data acquisition system (DAQ) to record events. It depends on the electronics, computers and trigger rate and is calculated using the ratio between the number of events recorded over the total number of events seen by the trigger. 
 
 \subsection{ Total Charge}
 
-The beam is not completely stable throughout the run; it may trip off or fluctuate over time. Therefore, only runs 
+The beam is not completely stable throughout the run; it may trip off or fluctuate over time.
+Therefore, we obtained the calibration data when the beam was mostly stable, and only runs
 where the average current is within a window of $\pm 2$~$\mu$A of the requested current are used. 
 The charge is calculated by integrating the current over time using the BCM calibration result (see Section~\ref{BCM}).
 
@@ -452,7 +437,13 @@ did not change to within about 0.5$\%$ which is well within the uncertainty of t
 
 \section{Background Contamination}
 
-The aluminum windows of the target cell contribute as background to the measured raw yield for each of the gas targets. To measure this background (henceforth referred to as contamination) in the case of the $^{40}$Ar experiment, a dummy target with aluminum foils of identical radiation length to that of the cell was used. In the case of the tritium experiments, an empty cell (or dummy cell)  was used. The normalized yields from these targets were then subtracted from the applicable $Y_{\rm{norm}}$. To check the current dependence of this subtraction, a comparison between the background at low and high current was measured for the dummy/empty targets. The charge yield given by Eq \ref{eq:current_calc} was binned in $y_{tar}$ bites along the target length, and the ratio of the events at high current to low current was determined. The ratio was found to be 1.006, which indicates that the background subtraction is independent of current, as expected. 
+The aluminum windows of the target cell contribute as background to the measured raw yield for each of the gas targets. 
+To measure this background (henceforth referred to as contamination) in the case of the $^{40}$Ar experiment, 
+a dummy target with aluminum foils with total thickness matching the radiation length of the argon filled cell, 
+was used.
+In the case of the tritium experiments, an empty cell (or dummy cell)  was used. The normalized yields from 
+these targets were then subtracted from the applicable $Y_{\rm{norm}}$. To check the current dependence of 
+this subtraction, a comparison between the background at low and high current was measured for the dummy/empty targets. The charge yield given by Eq \ref{eq:current_calc} was binned in $y_{tar}$ bites along the target length, and the ratio of the events at high current to low current was determined. The ratio was found to be 1.006, which indicates that the background subtraction is independent of current, as expected. 
 
 \begin{figure}[h]
  \centering
@@ -461,18 +452,20 @@ The aluminum windows of the target cell contribute as background to the measured
   \label{fig:bk_empty}
 \end{figure}
 
-Figure \ref{fig:bk_empty} shows the spectra of the charge normalized yield for the empty (dummy) cell and the tritium gas, for a beam current of $2.5$ $\mu A$. To optimize the signal to background ratio, events contributing to the $Y_{\rm{norm}}$ were selected from a symmetric region of $\pm 8$ $cm$ about the center of the target. Therefore, the contamination fraction is the ratio of $Y_{\rm{norm}}$ for the empty cell to $Y_{rm{norm}}$ for the gas cell of interest. Table \ref{tab:contamination_al} summarizes the percentage of background contamination found in the gas targets for each beam current used in the study. Note that the currents are nominal; the measured current for each run is slightly different, due to the normal operation of the accelerator.
+Figure \ref{fig:bk_empty} shows the spectra of the charge normalized yield for the empty (dummy) cell and the tritium gas, for a beam current of $2.5$ $\mu A$. To optimize the signal to background ratio, events contributing to the $Y_{\rm{norm}}$ were selected from a symmetric region of $\pm 8$ $cm$ about the center of the target. Therefore, the contamination fraction is the ratio of $Y_{\rm{norm}}$ for the empty cell to $Y_{\rm{norm}}$ for the gas cell of interest. Table \ref{tab:contamination_al} summarizes the percentage of background contamination found in the gas targets for each beam current used in the study. Note that the currents are nominal; the measured current for each run is slightly different, due to the normal operation of the accelerator.
  
 \begin{table}[h!]
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{ccccc|cc}
 \hline
 \textbf{\begin{tabular}[c]{@{}c@{}}Current \\ $(\mu A)$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{3}$H\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{3}$He\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{2}$H\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}$^{1}$H\\ (\%)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Current\\ $(\mu A)$\end{tabular}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Argon\\ (\%)\end{tabular}}} \\ \hline
-2.5                                                              & 1.7                                                             & 1.6                                                              & 0.7                                                             & 1.1                                                             & 2.5                                                             & 0.3                                                                                \\ \hline
-5                                                                & 1.7                                                             & 1.6                                                              & 0.7                                                             & 1.2                                                             & 4.5                                                             & 0.3                                                                                \\ \hline
-10                                                               & 1.7                                                             & 1.7                                                              & 0.8                                                             & 1.2                                                             & 8                                                               & 0.3                                                                                \\ \hline
-15                                                               & 1.8                                                             & 1.8                                                              & 0.8                                                             & 1.3                                                             & 12                                                              & 0.3                                                                                \\ \hline
-22.5                                                             & 1.8                                                             & 1.8                                                              & 0.8                                                             & 1.3                                                             & 15                                                              & 0.3                                                                                \\ \hline
-\multicolumn{5}{|l|}{}                                                                                                                                                                                                                                                                                                                    & 18                                                              & 0.3                                                                                \\ \hline
+2.5                                                              & 1.7                                                             & 1.6                                                              & 0.7                                                             & 1.1                                                             & 2.5                                                             & 0.3                                                                                \\ 
+5                                                                & 1.7                                                             & 1.6                                                              & 0.7                                                             & 1.2                                                             & 4.5                                                             & 0.3                                                                                \\ 
+10                                                               & 1.7                                                             & 1.7                                                              & 0.8                                                             & 1.2                                                             & 8                                                               & 0.3                                                                                \\ 
+15                                                               & 1.8                                                             & 1.8                                                              & 0.8                                                             & 1.3                                                             & 12                                                              & 0.3                                                                                \\ 
+22.5                                                             & 1.8                                                             & 1.8                                                              & 0.8                                                             & 1.3                                                             & 15                                                              & 0.3                                                                                \\ 
+
+ & & & & 
+                                                                                                                                                                                                                                                                                                              & 18                                                              & 0.3                                                                                \\ \hline
 \end{tabular}
 \caption{Aluminum window contamination in a $\pm 8$ $cm$ range with respect to the center of the target at each nominal current. Note that these currents were not the same for both experiments.}
 \label{tab:contamination_al}
@@ -526,23 +519,24 @@ f(I_{\rm{beam}}) = a\cdot I_{\rm{beam}}^{2} + b \cdot I_{\rm{beam}} + c.
 
 \begin{figure*}[h]
 \begin{center}
-  \begin{subfigure}{8cm}
-    \centering\includegraphics[width=8cm]{tritium_data.pdf}
+  \begin{subfigure}{0.45\textwidth}
+    \centering\includegraphics[width=\textwidth]{tritium_data.pdf}
     \caption{$^{3}$H Density Analysis. }
     \label{fig:tritium_data}
-  \end{subfigure}\vspace{0.5cm}
-  \begin{subfigure}{8cm}
-    \centering\includegraphics[width=8cm]{helium_data.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+    \centering\includegraphics[width=\textwidth]{helium_data.pdf}
     \caption{$^{3}$He Density Analysis.}
     \label{fig:helium_data}
-  \end{subfigure}\vspace{0.5cm}
-  \begin{subfigure}{8cm}
-    \centering\includegraphics[width=8cm]{deuterium_data.pdf}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+    \centering\includegraphics[width=\textwidth]{deuterium_data.pdf}
     \caption{$^{2}$H Density Analysis.}
     \label{fig:deuterium_data}
   \end{subfigure}
-  \begin{subfigure}{8cm}
-    \centering\includegraphics[width=8cm]{hydrogen_data.pdf}
+  \quad
+  \begin{subfigure}{0.45\textwidth}
+    \centering\includegraphics[width=\textwidth]{hydrogen_data.pdf}
     \caption{$^{1}$H Density Analysis.}
     \label{fig:hydrogen_data}
   \end{subfigure}
@@ -550,12 +544,6 @@ f(I_{\rm{beam}}) = a\cdot I_{\rm{beam}}^{2} + b \cdot I_{\rm{beam}} + c.
   \label{fig:tritium_targets}
   \caption{Density analysis of $^{3}$H, $^{3}$He, $^{2}$H and $^{1}$H.}
 \end{figure*}
-
-
-%\subsection{Density Factor Ratios}
-%
-%The tritium family of experiments measure the $^{3}H/^{3}He$ cross section ratio, since they are mirror nuclei.  Some of of the experiments also used the ratio of the $^{3}H/^{2}H $ and/or  $^{3}He/^{2}H $ . Therefore, the ratio of the density factors is used to make the corrections in the cross sections for the analysis. Figure \ref{fig:density_ratios} shows the ratio between the factor of density change for those nuclei. 
-
 
 \begin{figure}[!h]
  \centering
@@ -573,24 +561,28 @@ uncertainty causing the uncertainty in the charge to be current dependent. The u
 using the BCM calibration shown in Figure \ref{fig:dnew_cal}, together with the error covariance matrix.
 This is the dominant source of systematic uncertainty in the determination of the density reduction factor $f(I_{\rm{beam}})$.
 
-The background contamination coming from the entrance and exit windows also contribute as a source of systematic uncertainty. This is due to the thickness variations in the cell entrance and exit windows which can be seen in Figure \ref{fig:bk_empty}. Therefore, in order to calculate the background uncertainty in the measurement, the percentage of background was calculated in $y_{\rm{tar}}$ steps of $3$ $cm$ starting from 8~cm out to 20~cm from the center of the target.  The same normalization procedure was followed for each of the different cuts in the reaction vertex region to calculate $f(I_{\rm{beam}})$. Finally, the uncertainty in the background contamination is given by the standard deviation of the average of multiple $f(I_{\rm{beam}})$ obtained with the different cuts. The standard deviation was never more than 1$\%$ for each current.
+The background contamination coming from the entrance and exit windows also contribute as a source of systematic uncertainty. This is due to the thickness variations in the cell entrance and exit windows which can be seen in Figure \ref{fig:bk_empty}. Therefore, in order to calculate the background uncertainty in the measurement, the percentage of background was calculated in $y_{\rm{tar}}$ steps of $3$ $cm$ starting from $\pm$4~cm out to $\pm$ 10~cm from the center of the target.  The same normalization procedure was followed for each of the different cuts in the reaction vertex region to calculate $f(I_{\rm{beam}})$. Finally, the uncertainty in the background contamination is given by the standard deviation of the average of multiple $f(I_{\rm{beam}})$ obtained with the different cuts. The standard deviation was never more than 1$\%$ for each current.
 
 Furthermore, $1\%$ systematic uncertainties were estimated for the live-time, VDC One-Track efficiency, 
 trigger efficiency, detector and cut efficiencies of Gas Cerenkov and $\pi^{-}$ rejection.
 
 \subsection {Conclusions }
 
-Hall A at Jefferson Lab successfully ran the tritium set of experiments with an outstanding target system.  
-The maximum density change for each target is $9.7 \pm 0.5 \%$, $5.6 \pm 0.5\% $, $6.3 \pm 0.5\% $, $11.6\pm 0.5\% $ 
+Current dependent density correction functions have been determined for several species
+of gas target cells. The maximum density change for each target is $9.7 \pm 0.5 \%$, $5.6 \pm 0.5\% $, $6.3 \pm 0.5\% $, $11.6\pm 0.5\% $ 
 and $26.5 \pm 1 \%$ for $^{3}$H, $^{3}$He, $^{2}$H, $^{1}$H and $^{40}$Ar, respectively at $22.5$ $\mu$A. 
 
 \section{Acknowledgments}
-%% \label{}
 
 We wish to thank the staff of the Thomas Jefferson National Accelerator Facility especially 
 the accelerator staff and  Hall A and target group technical staffs. 
-We also acknowledge the critical efforts of the Savannah River site and 
-tritium enterprises group.
+We also acknowledge the critical efforts of Savannah River Site and
+Savannah River Tritium Enterprises.
+This work was supported by the U.S. Department of Energy (DOE) contract
+DE-AC05-06OR23177 under which Jefferson Science Associates operates 
+the Thomas Jefferson National Accelerator Facility,
+DOE contract DE-AC02-06CH11357 
+and by National Science Foundation (NSF) Grant No. NSF PHY 1506459.
 
 %\bibliographystyle{elsarticle-num} 
 %\bibliography{references.bib}
@@ -614,7 +606,7 @@ B.~Brajuskovic, T.~O'Connor, R.~J. Holt, J.~Reneker, D.~Meekin, P.~Solvignon,
   {\path{doi:10.1016/j.nima.2013.06.090}}.
 
 \bibitem{E12-11-112}
-P.~Solvignon, et~al., {JLab Experiment E12-06-112} (2011).
+P.~Solvignon, et~al., {JLab Experiment E12-11-112} (2011).
 
 \bibitem{E12-14-011}
 O.~Hen, L.~B. Weinstein, S.~Gilad, W.~Boeglin, et~al., {JLab Experiment
@@ -686,3 +678,4 @@ K.~B. Unser, {The Parametric current transformer: A Beam current monitor
 
 \end{thebibliography}
 \end{document}
+>>>>>>> upstream/master
